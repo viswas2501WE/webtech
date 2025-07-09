@@ -1490,7 +1490,7 @@ export const EVS2Data = [
     // 19
     {
         id: "Angular-Js",
-        coverlink: `${BASE1}/Ourservices-banner-7.png`,
+        coverlink: `${BASE1}/Our-services-banner-1.png`,
         evst1: "AngularJS",
         evst2: "Angular Js Development",
         evsp1: (

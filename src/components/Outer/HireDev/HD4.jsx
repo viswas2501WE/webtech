@@ -42,7 +42,7 @@ function HD4() {
     <div
       className="flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8 font-[600]"
       style={{
-        background: 'linear-gradient(90deg, #f85c70 0%, #ff8345 100%)',
+        background: 'linear-gradient(90deg, #1A96D5 0%, #242D65 100%)',
         fontFamily: 'Poppins, sans-serif',
       }}
     >
@@ -78,7 +78,7 @@ function HD4() {
                 alt={step.description}
                 width={64}
                 height={64}
-                className="w-full h-full p-2 object-contain"
+                className="w-full h-full p-2 object-contain hue-rotate-220"
               />
             </div>
 

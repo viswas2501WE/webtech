@@ -2,7 +2,7 @@ import React from "react";
 
 const Part5Common = ({ icon, title, description }) => {
     return (
-        <div className="relative group w-full h-full p-4 sm:p-6 bg-white rounded shadow-lg hover:shadow-lg transition-shadow duration-300 cursor-pointer flex flex-col">
+        <div className="relative group w-full h-full p-4 sm:p-6 bg-white rounded shadow-lg hover:shadow-lg transition-shadow duration-300 cursor-pointer flex flex-col  hue-rotate-220">
             {/* hover animation corners - NO CHANGES */}
             <span className="absolute w-6 h-6 sm:w-8 sm:h-8 border-t-4 border-l-4 translate-x-4 translate-y-4
                 group-hover:translate-x-0 group-hover:translate-y-0 border-red-500 opacity-0 transform
@@ -32,7 +32,7 @@ const Part5Common = ({ icon, title, description }) => {
 
             {/* Title */}
             <h3
-                className="text-xl sm:text-2xl text-gray-900 mb-2 font-[600] hover:text-[#F85C70] transition-all duration-200 ease-in flex-shrink-0"
+                className="text-xl sm:text-2xl text-gray-900 mb-2 font-[600] hover:text-[#1A96D5] transition-all duration-200 ease-in flex-shrink-0"
                 style={{ fontFamily: "Poppins, sans-serif" }}
             >
                 {title}

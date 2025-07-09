@@ -143,12 +143,12 @@ const AdminHeader = () => {
         {scrollTop && (
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="fixed bottom-7 right-7 z-50 group overflow-hidden w-10 h-10 rounded-sm bg-[#F85C70] flex justify-center items-center transition-all duration-700 ease-in-out"
+            className="fixed bottom-7 right-7 z-50 group overflow-hidden w-10 h-10 rounded-sm bg-[#1A96D5] flex justify-center items-center transition-all duration-700 ease-in-out"
             aria-label="Scroll to top"
             style={{ fontFamily: "Roboto, sans-serif" }}
             onMouseEnter={handleHover}
           >
-            <div className="absolute inset-0 bg-[#FF3147] z-0 transform scale-y-0 origin-bottom transition-transform duration-500 ease-in-out group-hover:scale-y-100" />
+            <div className="absolute inset-0 bg-[#1A96D5] z-0 transform scale-y-0 origin-bottom transition-transform duration-500 ease-in-out group-hover:scale-y-100" />
             <motion.div className="relative z-10 text-white" animate={controls} initial={{ y: 0 }}>
               <FaArrowUp className="transition-transform duration-300" />
             </motion.div>
@@ -174,7 +174,7 @@ const AdminHeader = () => {
             </Link>
             <button
               onClick={closeMobileMenu}
-              className="flex justify-center items-center w-8 h-8 rounded-full bg-[#F85C70] text-white"
+              className="flex justify-center items-center w-8 h-8 rounded-full bg-[#1A96D5] text-white"
               aria-label="Close menu"
             >
               <FaTimes className="h-5 w-5" />

@@ -23,8 +23,8 @@ export default function HD1() {
 
       {/* ────────── text column ────────── */}
       <div className="w-full lg:w-[50%] px-4 text-left">
-        <h1 className="text-[#F85C70] font-[500] text-[2vh] md:text-[2.5vh]">HIRE NOW</h1>
-        <span className="text-[#F85C70] border-t-2 border-dotted block w-[15%] md:w-[7%]" />
+        <h1 className="text-[#1A96D5] font-[500] text-[2vh] md:text-[2.5vh]">HIRE NOW</h1>
+        <span className="text-[#1A96D5] border-t-2 border-dotted block w-[15%] md:w-[7%]" />
         <h1
           className="font-[600] text-[4vh] md:text-[5.5vh] py-[1vh]"
           style={{ fontFamily: 'Poppins, sans-serif' }}

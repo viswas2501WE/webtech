@@ -22,7 +22,7 @@ export default function Part8({ services = [], title1slide, title2slide }) {
     <div
       className="absolute md:bottom-[120%] bottom-[130%] z-20 group
                  rounded-md bg-gradient-to-r from-white to-white
-                 hover:from-[#f85c70] hover:to-[#ff8345] p-[2px]
+                 hover:from-[#1A96D5] hover:to-[#242D65] p-[2px]
                  transition-colors duration-100"
       style={{
         width: '3.25vw',
@@ -37,7 +37,7 @@ export default function Part8({ services = [], title1slide, title2slide }) {
         onClick={onClick}
         className="w-full h-full flex items-center justify-center rounded-sm
                    bg-[#0f285f] text-white bg-gradient-to-r
-                   group-hover:from-[#f85c70] group-hover:to-[#ff8345]
+                   group-hover:from-[#1A96D5] group-hover:to-[#242D65]
                    transition-colors duration-300 cursor-pointer"
       >
         <ChevronLeft
@@ -57,7 +57,7 @@ export default function Part8({ services = [], title1slide, title2slide }) {
     <div
       className="absolute md:bottom-[120%] bottom-[130%] right-2 z-20 group
                  rounded-md bg-gradient-to-r from-white to-white
-                 hover:from-[#f85c70] hover:to-[#ff8345] p-[2px]
+                 hover:from-[#1A96D5] hover:to-[#242D65] p-[2px]
                  transition-colors duration-100"
       style={{
         width: '3.25vw',
@@ -72,7 +72,7 @@ export default function Part8({ services = [], title1slide, title2slide }) {
         onClick={onClick}
         className="w-full h-full flex items-center justify-center rounded-sm
                    bg-[#0f285f] text-white bg-gradient-to-r
-                   group-hover:from-[#f85c70] group-hover:to-[#ff8345]
+                   group-hover:from-[#1A96D5] group-hover:to-[#242D65]
                    transition-colors duration-300 cursor-pointer"
       >
         <ChevronRight
@@ -129,7 +129,7 @@ export default function Part8({ services = [], title1slide, title2slide }) {
           {/* headings */}
           <div className="text-center">
             <div
-              className="text-[#FF8345] font-[500] flex justify-center"
+              className="text-[#1A96D5] font-[500] flex justify-center"
               style={{
                 fontFamily: 'Roboto, sans-serif',
                 fontSize: 'clamp(1rem, 2.5vw, 2rem)',

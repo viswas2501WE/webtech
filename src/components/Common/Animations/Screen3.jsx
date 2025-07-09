@@ -2,7 +2,7 @@ export default function Screen3() {
   const base = process.env.NEXT_PUBLIC_IMG_url; // 2024/02 folder
 
   return (
-    <div className="absolute hidden lg:flex -z-50 inset-0 pointer-events-none overflow-hidden">
+    <div className="absolute hidden lg:flex -z-50 inset-0 pointer-events-none overflow-hidden !hue-rotate-220">
       <img
         src={`${base}/element_62.png`}
         alt=""

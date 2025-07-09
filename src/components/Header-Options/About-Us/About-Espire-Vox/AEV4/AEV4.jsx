@@ -14,7 +14,7 @@ export default function AEV4() {
       <div className="w-full md:w-[50%] pr-0 md:pr-8 mb-8 md:mb-0">
         <AEV_1 />
 
-        <h1 className="font-[500] text-[#FF3147] text-base md:text-xl">
+        <h1 className="font-[500] text-[#1A96D5] text-base md:text-xl">
           COMMITTED TO EXCELLENCE
         </h1>
 

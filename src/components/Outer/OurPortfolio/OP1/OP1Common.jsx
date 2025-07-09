@@ -15,8 +15,8 @@ export function ImageFilterNav({ options, activeFilter, onFilterChange }) {
               onClick={() => onFilterChange(option.value)}
               className={`
                 px-4 py-2 text-sm sm:text-base font-[600] transition-all
-                cursor-pointer hover:text-[#F85C70] duration-300 ease-in-out
-                ${activeFilter === option.value ? 'text-[#F85C70]' : 'text-black'}
+                cursor-pointer hover:text-[#1A96D5] duration-300 ease-in-out
+                ${activeFilter === option.value ? 'text-[#1A96D5]' : 'text-black'}
               `}
             >
               {option.label}
@@ -134,7 +134,7 @@ export function GalleryImage({ image }) {
             transform translate-y-[40%] group-hover:translate-y-0
           " />
         <div className="
-            absolute inset-0 bg-gradient-to-t from-red-500/60 via-red-800/50 to-black/40
+            absolute inset-0 bg-gradient-to-t from-[#1A96D5]/60 via-[#242D65]/50 to-black/40
             opacity-0 group-hover:opacity-100
             transition-opacity duration-500 ease-in-out
           " />

@@ -5,7 +5,7 @@ export default function Screen1() {
   const base = process.env.NEXT_PUBLIC_IMG_url;     // 2024/02 folder
 
   return (
-    <div className="absolute hidden lg:flex -z-50 inset-0 pointer-events-none">
+    <div className="absolute hidden lg:flex -z-50 inset-0 pointer-events-none hue-rotate-220">
       {/* left cluster */}
       <img
         src={`${base}/element_1.png`}

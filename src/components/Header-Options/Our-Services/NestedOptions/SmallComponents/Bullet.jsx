@@ -15,9 +15,9 @@ const Bullet = ({ title = 'Default Title', bulletPoints = [] }) => {
             <div key={index} className="flex items-start">
               {/* Custom bullet animation */}
               <div className="flex justify-center items-center mr-[1.5%] h-5 w-5 md:h-6 md:w-6 flex-shrink-0 relative">
-                <span className="absolute h-3.5 w-3.5 bg-[#FF3147]"></span>
+                <span className="absolute h-3.5 w-3.5 bg-[#1A96D5]"></span>
                 <span className="absolute h-2.5 w-2.5 bg-white"></span>
-                <span className="absolute h-1.5 w-1.5 bg-[#FF3147]"></span>
+                <span className="absolute h-1.5 w-1.5 bg-[#1A96D5]"></span>
               </div>
               <div className="text-gray-600 font-[500]" style={{ fontFamily: 'Roboto, sans-serif' }}>
                 {point.text}

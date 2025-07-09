@@ -4,7 +4,7 @@ import Image from "next/image";
 import Screen1 from "../Common/Animations/Scree1";
 
 const Part1 = () => {
-    const imgurl = `${process.env.NEXT_PUBLIC_IMG_url}/mascot-espire-vox.png`
+    const imgurl = `${process.env.NEXT_PUBLIC_IMG_url}/mascot-webtech.png`
     return (
         <div className="flex flex-col lg:flex-row relative justify-between px-6 sm:px-10 md:px-20 lg:px-40 h-auto sm:h-full items-center w-full pb-5 pt-5 lg:pb-15 lg:pt-22  overflow-hidden">
             <Screen1 />
@@ -34,7 +34,7 @@ const Part1 = () => {
                     >
                         Serving Clients Across
                         <span
-                            className="text-[#F85C70]"
+                            className="text-[#1A96D5]"
                         >{' '}15+ Countries
                         </span>
                     </h1>

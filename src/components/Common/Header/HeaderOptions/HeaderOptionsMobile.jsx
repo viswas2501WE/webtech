@@ -182,8 +182,8 @@ export default function HeaderOptionsMobile({ onClose }) {
             : 'flex items-center py-2 px-2'}
           rounded-md text-sm transition-colors
           ${pathname.startsWith(item.path)
-            ? 'text-[#F85C70]'
-            : 'text-black hover:text-[#F85C70]'}
+            ? 'text-[#1A96D5]'
+            : 'text-black hover:text-[#1A96D5]'}
         `}
       >
         {item.icon && (
@@ -208,7 +208,7 @@ export default function HeaderOptionsMobile({ onClose }) {
                 <div
                   className={`
                     flex items-center justify-between py-2 px-2 cursor-pointer transition-colors
-                    ${activeParent ? 'text-[#F85C70]' : 'text-black hover:text-[#F85C70]'}
+                    ${activeParent ? 'text-[#1A96D5]' : 'text-black hover:text-[#1A96D5]'}
                   `}
                   onClick={() => toggleDropdown(item.key)}
                 >
@@ -244,7 +244,7 @@ export default function HeaderOptionsMobile({ onClose }) {
                           <div
                             className={`
                               flex items-center justify-between py-2 px-2 text-sm cursor-pointer transition-colors
-                              ${activeSub ? 'text-[#F85C70]' : 'text-black hover:text-[#F85C70]'}
+                              ${activeSub ? 'text-[#1A96D5]' : 'text-black hover:text-[#1A96D5]'}
                             `}
                             onClick={() =>
                               sub.label === 'Mernstack Development'
@@ -282,7 +282,7 @@ export default function HeaderOptionsMobile({ onClose }) {
         {/* Mernstack or normal item */}
         <div
           className={`flex items-center justify-between py-2 px-2 text-sm cursor-pointer transition-colors
-            ${pathname.startsWith(inner.path) || (isMernstack && openMern) ? 'text-[#F85C70]' : 'text-black hover:text-[#F85C70]'}
+            ${pathname.startsWith(inner.path) || (isMernstack && openMern) ? 'text-[#1A96D5]' : 'text-black hover:text-[#1A96D5]'}
           `}
           onClick={() => {
             if (hasSubItems && isMernstack) {
@@ -325,8 +325,8 @@ export default function HeaderOptionsMobile({ onClose }) {
                 onClick={onClose}
                 className={`block py-2 px-8 text-sm ${
                   pathname.startsWith(subInner.path)
-                    ? 'text-[#F85C70]'
-                    : 'text-black hover:text-[#F85C70]'
+                    ? 'text-[#1A96D5]'
+                    : 'text-black hover:text-[#1A96D5]'
                 }`}
               >
                 {subInner.label}
@@ -353,8 +353,8 @@ export default function HeaderOptionsMobile({ onClose }) {
                           block py-2 px-2 text-sm transition-colors
                           ${
                             pathname.startsWith(sub.path)
-                              ? 'text-[#F85C70]'
-                              : 'text-black hover:text-[#F85C70]'
+                              ? 'text-[#1A96D5]'
+                              : 'text-black hover:text-[#1A96D5]'
                           }
                         `}
                       >
@@ -377,7 +377,7 @@ export default function HeaderOptionsMobile({ onClose }) {
             href={s.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center py-2 px-2 transition-colors text-black hover:text-[#F85C70]"
+            className="flex items-center py-2 px-2 transition-colors text-black hover:text-[#1A96D5]"
           >
             <img src={s.icon} alt={s.name} className="w-[2.5vh] h-[2.5vh] mr-3" />
             <span>{s.name}</span>

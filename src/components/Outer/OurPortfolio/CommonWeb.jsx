@@ -37,7 +37,7 @@ const CommonWeb = ({ p1, p2, wimg, p3, features, currentCategoryId }) => {
                         <h1 className="py-[3%] font-[500] text-xl" style={{ fontFamily: "Poppins, sans-serif" }}>Tools and Technologies used:</h1>
                         <div className="relative flex" style={{ fontFamily: "Poppins, sans-serif" }}>
                             {/* Vertical Red Bar - Matches the image */}
-                            <div className="absolute left-0 top-0 bottom-0 w-2 bg-red-500 my-1"></div>
+                            <div className="absolute left-0 top-0 bottom-0 w-2 bg-[#1A96D5] my-1"></div>
 
                             {/* Content Container */}
                             {/* Grid columns responsive: 1 on small, 2 on medium+ */}
@@ -46,7 +46,7 @@ const CommonWeb = ({ p1, p2, wimg, p3, features, currentCategoryId }) => {
                                 <ul className="space-y-4">
                                     {column1Features.map((feature, index) => (
                                         <li key={`col1-${index}`} className="flex items-center text-gray-800 text-md font-[500]">
-                                            <span className="text-red-500 mr-3 text-sm border-1 rounded-full p-[2.5%] leading-none"><FaCheck /></span>
+                                            <span className="text-[#1A96D5] mr-3 text-sm border-1 rounded-full p-[2.5%] leading-none"><FaCheck /></span>
                                             {feature}
                                         </li>
                                     ))}
@@ -57,7 +57,7 @@ const CommonWeb = ({ p1, p2, wimg, p3, features, currentCategoryId }) => {
                                     <ul className="space-y-4">
                                         {column2Features.map((feature, index) => (
                                             <li key={`col2-${index}`} className="flex items-center text-gray-800 text-md font-[500]">
-                                                <span className="text-red-500 mr-3 text-sm border-1 rounded-full p-[2.5%] leading-none"><FaCheck /></span>
+                                                <span className="text-[#1A96D5] mr-3 text-sm border-1 rounded-full p-[2.5%] leading-none"><FaCheck /></span>
                                                 {feature}
                                             </li>
                                         ))}

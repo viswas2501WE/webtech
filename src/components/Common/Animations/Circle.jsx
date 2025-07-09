@@ -51,7 +51,7 @@ console.log(img1 , img2 , img3 , img4 );
       {img4 && (
         <div
           className="z-50 w-[11%] h-[11%] rounded-full absolute top-[53%] left-[35%] flex justify-center items-center"
-          style={{ background: 'linear-gradient(90deg, #f85c70 0%, #ff8345 100%)' }}
+          style={{ background: 'linear-gradient(90deg, #1A96D5 0%, #242D65 100%)' }}
         >
           <Image
             src={img4}
@@ -65,8 +65,8 @@ console.log(img1 , img2 , img3 , img4 );
 
       {/* pulsing dot */}
       <div className="absolute top-[53%] left-[35%] w-[11%] h-[11%]">
-        <div className="absolute inset-0 rounded-full bg-red-500 opacity-100 animate-ping" />
-        <div className="relative w-full h-full rounded-full bg-[#FF4444] z-10" />
+        <div className="absolute inset-0 rounded-full bg-[#1A96D5] opacity-100 animate-ping" />
+        <div className="relative w-full h-full rounded-full bg-[#1A96D5] z-10" />
       </div>
 
       <style jsx>{`

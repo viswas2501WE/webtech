@@ -21,7 +21,7 @@ function HeaderOptions() {
   }, []);
 
   const baseClass =
-    'hover:text-[#FF3147] transition-colors duration-300 cursor-pointer py-12';
+    'hover:text-[#1A96D5] transition-colors duration-300 cursor-pointer py-12';
   const defaultTextColorClass =
     isHomePage || scrolledHalfway ? 'text-black' : 'text-white';
   const combinedBaseClass = `${baseClass} ${defaultTextColorClass}`;
@@ -103,7 +103,7 @@ function HeaderOptions() {
           <Link
             href={path}
             className={`block py-2 px-5 whitespace-nowrap ${
-              active ? 'text-[#F85C70]' : 'hover:text-[#FF3147]'
+              active ? 'text-[#1A96D5]' : 'hover:text-[#1A96D5]'
             }`}
           >
             {label}
@@ -112,7 +112,7 @@ function HeaderOptions() {
           {Array.isArray(subItem) && (
             <div
               className="
-                absolute -top-2 right-57 w-57 ml-2 border-t-4 border-[#FF3147]
+                absolute -top-2 right-57 w-57 ml-2 border-t-4 border-[#1A96D5]
                 bg-white shadow-lg mt-2 py-5 z-50 font-[500] rounded-b-md
                 transition-transform duration-700 ease-in-out origin-top
                 scale-y-0 opacity-0 group-hover:scale-y-100 group-hover:opacity-100
@@ -126,8 +126,8 @@ function HeaderOptions() {
                   href={innerPath}
                   className={`block py-2 px-4 ${
                     pathname.startsWith(innerPath)
-                      ? 'text-[#F85C70]'
-                      : 'hover:text-[#FF3147]'
+                      ? 'text-[#1A96D5]'
+                      : 'hover:text-[#1A96D5]'
                   }`}
                 >
                   {innerLabel}
@@ -192,7 +192,7 @@ function HeaderOptions() {
       style={{ fontFamily: 'Roboto, sans-serif', width: '91%' }}
     >
       {/* Home */}
-      <Link href="/" className={pathname === '/' ? 'text-[#FF3147] py-12' : combinedBaseClass}>
+      <Link href="/" className={pathname === '/' ? 'text-[#1A96D5] py-12' : combinedBaseClass}>
         Home
       </Link>
 
@@ -205,7 +205,7 @@ function HeaderOptions() {
         <span
           className={
             checkIfAnyChildIsActive(aboutUsPaths)
-              ? 'text-[#F85C70] py-12 cursor-pointer'
+              ? 'text-[#1A96D5] py-12 cursor-pointer'
               : combinedBaseClass
           }
         >
@@ -215,7 +215,7 @@ function HeaderOptions() {
         {/* about submenu */}
         <div
           className={`
-            absolute top-full left-0 w-57 bg-white shadow-lg border-t-4 border-[#FF3147] out
+            absolute top-full left-0 w-57 bg-white shadow-lg border-t-4 border-[#1A96D5] out
             mt-7 p-5 z-50 font-[500] rounded-b-md transition-transform duration-700
             origin-top ${openDropdown === 'about' ? 'scale-y-100 opacity-100 pointer-events-auto' : 'scale-y-0 opacity-0 pointer-events-none'}
           `}
@@ -224,7 +224,7 @@ function HeaderOptions() {
           <Link
             href="/about-us/About-Espire-Vox"
             className={`block py-2 ${
-              pathname === '/about-us/About-Espire-Vox' ? 'text-[#F85C70]' : 'hover:text-[#FF3147]'
+              pathname === '/about-us/About-Espire-Vox' ? 'text-[#1A96D5]' : 'hover:text-[#1A96D5]'
             }`}
           >
             About Espire Vox
@@ -232,7 +232,7 @@ function HeaderOptions() {
           <Link
             href="/about-us/our-team"
             className={`block py-2 ${
-              pathname === '/about-us/our-team' ? 'text-[#F85C70]' : 'hover:text-[#FF3147]'
+              pathname === '/about-us/our-team' ? 'text-[#1A96D5]' : 'hover:text-[#1A96D5]'
             }`}
           >
             Our Team
@@ -243,7 +243,7 @@ function HeaderOptions() {
       {/* Hire Developers */}
       <Link
         href="/hire-dev"
-        className={pathname.startsWith('/hire-dev') ? 'text-[#FF3147] py-12' : combinedBaseClass}
+        className={pathname.startsWith('/hire-dev') ? 'text-[#1A96D5] py-12' : combinedBaseClass}
       >
         Hire Developers
       </Link>
@@ -260,7 +260,7 @@ function HeaderOptions() {
         <span
           className={
             checkIfAnyChildIsActive(servicePaths)
-              ? 'text-[#F85C70] cursor-pointer py-12'
+              ? 'text-[#1A96D5] cursor-pointer py-12'
               : combinedBaseClass
           }
         >
@@ -269,7 +269,7 @@ function HeaderOptions() {
 
         <div
           className={`
-            absolute top-full left-0 w-57 bg-white shadow-lg border-t-4 border-[#FF3147]
+            absolute top-full left-0 w-57 bg-white shadow-lg border-t-4 border-[#1A96D5]
             mt-7 py-5 z-50 font-[500] rounded-b-md transition-transform duration-700
             origin-top ${openDropdown === 'service' ? 'scale-y-100 opacity-100 pointer-events-auto' : 'scale-y-0 opacity-0 pointer-events-none'}
           `}
@@ -279,8 +279,8 @@ function HeaderOptions() {
             href="/our-services/espire-vox-services"
             className={`block py-2 px-5 ${
               pathname.startsWith('/our-services/espire-vox-services')
-                ? 'text-[#F85C70]'
-                : 'hover:text-[#FF3147]'
+                ? 'text-[#1A96D5]'
+                : 'hover:text-[#1A96D5]'
             }`}
           >
             Espire Vox Services
@@ -303,8 +303,8 @@ function HeaderOptions() {
                 href={path}
                 className={`block py-2 px-5 ${
                   checkIfAnyChildIsActive(groups[key])
-                    ? 'text-[#F85C70]'
-                    : 'hover:text-[#FF3147]'
+                    ? 'text-[#1A96D5]'
+                    : 'hover:text-[#1A96D5]'
                 }`}
               >
                 {label}
@@ -313,7 +313,7 @@ function HeaderOptions() {
               {/* nested submenu */}
               <div
                 className={`
-                  absolute -top-11 right-57 w-57 bg-white shadow-lg border-t-4 border-[#FF3147]
+                  absolute -top-11 right-57 w-57 bg-white shadow-lg border-t-4 border-[#1A96D5]
                   mt-11 py-5 z-50 font-[500] rounded-b-md transition-transform duration-700
                   origin-top ${
                     openSubMenu === key ? 'scale-y-100 opacity-100 pointer-events-auto' : 'scale-y-0 opacity-0 pointer-events-none'
@@ -338,7 +338,7 @@ function HeaderOptions() {
         <Link
           key={path}
           href={path}
-          className={pathname.startsWith(path) ? 'text-[#FF3147] py-12' : combinedBaseClass}
+          className={pathname.startsWith(path) ? 'text-[#1A96D5] py-12' : combinedBaseClass}
         >
           {label}
         </Link>

@@ -29,7 +29,7 @@ const C2Common = ({ title1 = 'Default Title 1', title2 = 'Default Title 2', bull
       data-animate-on-mobile
     >
       <div style={{ fontFamily: 'Roboto, sans-serif' }}>
-        <h1 className="text-lg font-[500] text-[#F85C70]">{title1}</h1>
+        <h1 className="text-lg font-[500] text-[#1A96D5]">{title1}</h1>
         <h2
           className="text-5xl font-[600] pt-[2%] pb-[5%]"
           style={{ fontFamily: 'Poppins, sans-serif' }}
@@ -43,9 +43,9 @@ const C2Common = ({ title1 = 'Default Title 1', title2 = 'Default Title 2', bull
             bulletPoints.map((point) => (
               <div key={point.id} className="flex items-start">
                 <div className="flex justify-center items-center mr-[1.5%] h-5 w-5 md:h-6 md:w-6 flex-shrink-0 relative">
-                  <span className="absolute h-3.5 w-3.5 bg-[#FF3147]"></span>
+                  <span className="absolute h-3.5 w-3.5 bg-[#1A96D5]"></span>
                   <span className="absolute h-2.5 w-2.5 bg-white"></span>
-                  <span className="absolute h-1.5 w-1.5 bg-[#FF3147]"></span>
+                  <span className="absolute h-1.5 w-1.5 bg-[#1A96D5]"></span>
                 </div>
 
                 <p>{point.text}</p>

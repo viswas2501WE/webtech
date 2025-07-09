@@ -21,7 +21,7 @@ export default function Part7Common({
       {/* ─── foreground content ─── */}
       <div className="relative z-10">
         {/* icon (already an <Image> from parent) */}
-        <div className="text-red-400 py-2">{icon}</div>
+        <div className="text-[#1A96D5] hue-rotate-220 py-2">{icon}</div>
 
         {/* heading */}
         <h3

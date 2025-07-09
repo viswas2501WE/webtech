@@ -32,7 +32,7 @@ export default function Part4() {
         <div className="w-full lg:w-1/2 lg:pl-[6%]">
 
           <h4
-            className="font-[600] text-[#FF3147] text-lg"
+            className="font-[600] text-[#1A96D5] text-lg"
             style={{ fontFamily: 'Roboto, sans-serif' }}
           >
             WE ARE SPECIALISTS IN E‑COMMERCE
@@ -72,7 +72,7 @@ export default function Part4() {
         {/* --------------------------- right clipped image --------------------------- */}
         <div className="w-full lg:w-[42%] relative max-w-sm lg:max-w-xl mx-auto mt-8 lg:mt-0 px-[2%]">
           {/* red accent behind image */}
-          <div className="absolute top-0 right-0 w-[75%] h-[80%] bg-[#FF3147] hidden lg:flex z-0" />
+          <div className="absolute top-0 right-0 w-[75%] h-[80%] bg-[#1A96D5] hidden lg:flex z-0" />
 
           {/* clipped image container */}
           <div
@@ -101,7 +101,7 @@ function BulletList({ items }) {
     <div className="w-full xs:w-1/2">
       {items.map((label) => (
         <div key={label} className="flex items-center py-2">
-          <div className="h-[5vh] w-[5vh] lg:h-[7vh] lg:w-[7vh] bg-[#F8E1E4] flex justify-center items-center rounded-full text-[#FF8345] text-xl lg:text-2xl mr-2.5">
+          <div className="h-[5vh] w-[5vh] lg:h-[7vh] lg:w-[7vh] bg-[#e1e7f8] flex justify-center items-center rounded-full text-[#1A96D5] text-xl lg:text-2xl mr-2.5">
             <FaCheck />
           </div>
           <span className="text-base lg:text-lg text-white">{label}</span>

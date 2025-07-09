@@ -37,10 +37,10 @@ export default function AEV5() {
       {/* ────────── Header section ────────── */}
       <div className="flex flex-col lg:flex-row justify-center items-center px-4 sm:px-6 md:px-10 lg:px-46 text-center lg:text-left">
         <div className="w-full lg:w-[50%] mb-8 lg:mb-0 lg:pr-8">
-          <h1 className="text-[#F85C70] font-[500] text-lg sm:text-xl lg:text-xl" style={{ fontFamily: 'Roboto, sans-serif' }}>
+          <h1 className="text-[#1A96D5] font-[500] text-lg sm:text-xl lg:text-xl" style={{ fontFamily: 'Roboto, sans-serif' }}>
             ESPIRE VOX WAS ESTABLISHED BY
           </h1>
-          <span className="text-[#F85C70] font-[500] border-dashed border-t block w-1/3 sm:w-1/4 lg:w-[24%] mx-auto lg:mx-0 mt-2" />
+          <span className="text-[#1A96D5] font-[500] border-dashed border-t block w-1/3 sm:w-1/4 lg:w-[24%] mx-auto lg:mx-0 mt-2" />
           <h1 className="font-[600] text-4xl sm:text-5xl lg:text-[6vh] mt-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
             Ruchi &amp; Mithil Chauhan
           </h1>

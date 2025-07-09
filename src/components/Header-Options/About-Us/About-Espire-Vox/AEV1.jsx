@@ -36,7 +36,7 @@ export default function AboutUsPage() {
            style={{ fontFamily: 'Roboto, sans-serif' }}>
         {/* ---------- LEFT COLUMN ---------- */}
         <div className="w-full lg:w-[37.3%]">
-          <h1 className="font-[500] text-[#FF3147] text-base md:text-lg">ABOUT US</h1>
+          <h1 className="font-[500] text-[#1A96D5] text-base md:text-lg">ABOUT US</h1>
           <h1 className="font-[600] text-[4vh] md:text-[4.5vh] lg:text-[5.5vh] leading-tight mt-2"
               style={{ fontFamily: 'Poppins, sans-serif' }}>
             We turn your ideas into reality!
@@ -47,9 +47,9 @@ export default function AboutUsPage() {
             {bulletPointsData.map(item => (
               <div key={item.id} className="flex items-start py-[0.6vw] font-[400] text-sm md:text-base">
                 <div className="flex justify-center items-center h-5 w-5 md:h-6 md:w-6 flex-shrink-0 relative">
-                  <span className="absolute h-3.5 w-3.5 bg-[#FF3147]" />
+                  <span className="absolute h-3.5 w-3.5 bg-[#1A96D5]" />
                   <span className="absolute h-2.5 w-2.5 bg-white" />
-                  <span className="absolute h-1.5 w-1.5 bg-[#FF3147]" />
+                  <span className="absolute h-1.5 w-1.5 bg-[#1A96D5]" />
                 </div>
                 <div className="ml-2 leading-relaxed">{item.text}</div>
               </div>

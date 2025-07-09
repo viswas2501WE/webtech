@@ -10,7 +10,7 @@ export default function Part8Common({
 }) {
   return (
     <div className="relative bg-white w-65 xs:w-70 sm:w-75 md:w-80 xl:w-85
-                    ml-[5vw] xs:ml-[12vw] sm:ml-[15vw] md:ml-0 p-6 mr-15">
+                    ml-[5vw] xs:ml-[12vw] sm:ml-[15vw] md:ml-0 p-6 mr-15 hue-rotate-220">
       {/* orange corner frame */}
       <div className="absolute top-0 right-0 h-full w-full">
         <div className="absolute right-[-10%] top-[7%] w-[10%] border-t-5 border-orange-500" />
@@ -50,9 +50,9 @@ export default function Part8Common({
         {/* READ MORE link */}
         <Link
           href={`/our-services/espire-vox-services/${id}`}
-          className="flex items-baseline transition-colors fill-[#FF8345]
+          className="flex items-baseline transition-colors fill-[#242D65]
                      hover:fill-[#0F285F] py-2 duration-300
-                     text-[#0F285F] hover:text-[#FF8345]"
+                     text-[#0F285F] hover:text-[#242D65]"
         >
           <span className="font-[600]" style={{ fontFamily: 'Roboto, sans-serif' }}>
             READ MORE

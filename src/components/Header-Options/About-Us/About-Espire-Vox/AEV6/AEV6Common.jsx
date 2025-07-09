@@ -56,7 +56,7 @@ export default function AEV6Common({ testimonial }) {
           </svg>
 
           <div
-            className="text-[#FF3174] text-lg md:text-xl font-[600] pt-[2vh]"
+            className="text-[#1A96D5] text-lg md:text-xl font-[600] pt-[2vh]"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             {testimonial.name}

@@ -27,7 +27,7 @@ export default function NotFound() {
   return (
     <div
       className="h-screen flex justify-center relative"
-      style={{ background: 'radial-gradient(circle at bottom, #fee1e1 , #f85c70)' }}
+      style={{ background: 'radial-gradient(circle at bottom, #fee1e1 , #1A96D5)' }}
     >
       {/* 404 illustration from /public/Local/404.png */}
       <Image
@@ -75,7 +75,7 @@ export default function NotFound() {
           >
             <button
               className="
-                bg-[#F85C70] text-white border-2 flex justify-center items-center
+                bg-[#1A96D5] text-white border-2 flex justify-center items-center
                 transition-all duration-200 overflow-hidden
               "
               style={{

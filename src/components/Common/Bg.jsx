@@ -53,8 +53,9 @@ export default function VerticalBackground({ observedHeight = 0 }) {
               style={{
                 background:
                   i % 2 === 0
-                    ? 'linear-gradient(to bottom, rgba(248,92,112,1) 0%, rgba(248,92,112,0) 80%)'
-                    : 'linear-gradient(to top, rgba(248,92,112,1) 0%, rgba(248,92,112,0) 80%)',
+                    ? 'linear-gradient(to bottom, rgba(26,150,213,1) 0%, rgba(26,150,213,0) 80%)'
+                    : 'linear-gradient(to top, rgba(26,150,213,1) 0%, rgba(26,150,213,0) 80%)'
+
               }}
             />
           </div>

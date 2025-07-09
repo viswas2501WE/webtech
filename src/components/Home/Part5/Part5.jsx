@@ -67,9 +67,9 @@ export default function Part5() {
           className="flex justify-center items-center font-[500] text-base md:text-lg"
           style={{ fontFamily: 'Roboto, sans-serif' }}
         >
-          <span className="h-0.5 w-8 md:w-12 bg-[#F85C70]" />
+          <span className="h-0.5 w-8 md:w-12 bg-[#1A96D5]" />
           <span className="text-[#4F4F4F] px-2 md:px-3">What We Do</span>
-          <span className="h-0.5 w-8 md:w-12 bg-[#F85C70]" />
+          <span className="h-0.5 w-8 md:w-12 bg-[#1A96D5]" />
         </div>
 
         <h2

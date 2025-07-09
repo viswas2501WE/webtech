@@ -21,7 +21,7 @@ const PricingCard = ({ plantitle, planprice, planduration, planfeatures, planlin
     const toggleExpansion = () => setIsExpanded((prev) => !prev);
 
     return (
-        <div className="bg-white rounded-lg shadow-md border-2 border-[#F85C70] h-full flex flex-col transition-all duration-300 ease-in-out">
+        <div className="bg-white rounded-lg shadow-md border-2 border-[#1A96D5] h-full flex flex-col transition-all duration-300 ease-in-out">
             {/* Header */}
             <div
                 className="w-full flex justify-center rounded-t-md"
@@ -62,7 +62,7 @@ const PricingCard = ({ plantitle, planprice, planduration, planfeatures, planlin
                         {planfeatures.map((planfeature, index) => (
                             <li key={index} className="flex items-start">
                                 <svg
-                                    className="w-7 h-7 text-[#F85C70] mr-2 flex-shrink-0"
+                                    className="w-7 h-7 text-[#1A96D5] mr-2 flex-shrink-0"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -84,7 +84,7 @@ const PricingCard = ({ plantitle, planprice, planduration, planfeatures, planlin
                 {needsShowMore && (
                     <button
                         onClick={toggleExpansion}
-                        className="text-[#F85C70] text-sm mt-6 font-semibold underline-offset-3 hover:underline focus:outline-none"
+                        className="text-[#1A96D5] text-sm mt-6 font-semibold underline-offset-3 hover:underline focus:outline-none"
                     >
                         {isExpanded ? 'Show Less' : 'Show More'}
                     </button>
@@ -109,7 +109,7 @@ export const PricingPlans = ({ data = [], plantitle1 }) => {
 
     return (
         <div className="pt-15">
-            <h1 className="text-xl text-[#FF8345] font-[600] text-center mb-3" style={{ fontFamily: "Poppins, sans-serif" }}>{plantitle1}</h1>
+            <h1 className="text-xl text-[#242D65] font-[600] text-center mb-3" style={{ fontFamily: "Poppins, sans-serif" }}>{plantitle1}</h1>
             <h2 className="text-5xl font-bold text-center mb-10" style={{ fontFamily: "Poppins, sans-serif" }}>PRICING PLANS</h2>
             <div className="grid gap-16 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-33 ">
                 {data.map((plan, idx) => (

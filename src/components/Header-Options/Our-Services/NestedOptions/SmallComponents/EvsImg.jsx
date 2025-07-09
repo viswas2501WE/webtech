@@ -9,7 +9,7 @@ const EvsImg = ({ src, alt = "image", showPattern = true, showRedBg = true }) =>
       <div className="lg:relative lg:-top-[6vh] flex lg:mb-[7vh] lg:-right-[10vh]">
         <div className="w-full px-[0%] md:px-[4%] relative max-w-sm md:max-w-xl mx-auto mb-[6vh]">
           {showRedBg && (
-            <div className="absolute top-0 right-0 w-[75%] h-[80%] bg-[#FF3147] z-0" />
+            <div className="absolute top-0 right-0 w-[75%] h-[80%] bg-[#1A96D5] z-0" />
           )}
 
           <div

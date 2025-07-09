@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
 
   useEffect(() => {
     const pageTitle = labelMap[pathname] || 'Page';
-    document.title = `Espire Vox - ${pageTitle}`;
+    document.title = `Webtech Evolution - ${pageTitle}`;
   }, [pathname]);
 
   const isAdminRoute = pathname.startsWith('/admin');

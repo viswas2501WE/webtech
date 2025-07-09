@@ -2,7 +2,7 @@ export default function Screen2() {
   const base = process.env.NEXT_PUBLIC_IMG_url;
 
   return (
-    <div className="absolute hidden lg:flex -z-50 inset-0 pointer-events-none">
+    <div className="absolute hidden lg:flex -z-50 inset-0 pointer-events-none !hue-rotate-220">
       <img src={`${base}/element_3.png`} alt="" className="absolute top-[0%] left-[5%] animate-[scaleaa_12s_ease-in-out_infinite] origin-left" />
       <img src={`${base}/element_17.png`} alt="" className="absolute top-[2%] left-[35%] animate-[moveXScale_7s_ease-in-out_infinite]" />
       <img src={`${base}/element_16.png`} alt="" className="absolute bottom-[15%] left-[7%] animate-[movey_8s_ease-in-out_infinite]" />

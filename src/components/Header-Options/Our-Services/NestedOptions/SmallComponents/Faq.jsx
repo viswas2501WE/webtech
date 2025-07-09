@@ -19,13 +19,13 @@ const Faq = ({ data = [] }) => {
             aria-expanded={openIndex === index}
           >
             <span
-              className={`text-lg font-[600] ${openIndex === index ? "text-red-500" : "text-gray-700"}`}
+              className={`text-lg font-[600] ${openIndex === index ? "text-[#1A96D5]" : "text-gray-700"}`}
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               {item.q}
             </span>
             <svg
-              className={`w-6 h-6 text-red-500 transition-transform duration-300 ease-in-out ${
+              className={`w-6 h-6 text-[#1A96D5] transition-transform duration-300 ease-in-out ${
                 openIndex === index ? "rotate-45" : ""
               }`}
               fill="none"

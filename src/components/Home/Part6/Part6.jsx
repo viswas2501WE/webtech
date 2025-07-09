@@ -15,14 +15,14 @@ export default function Part6() {
   return (
     <div
       className="relative w-full min-h-[53vh] flex flex-col items-center justify-center p-4 overflow-hidden"
-      style={{ background: 'linear-gradient(90deg, #f85c70 0%, #ff8345 100%)' }}
+      style={{ background: 'linear-gradient(90deg, #242D65 0%, #1A96D5 100%)' }}
     >
       {/* floating elements — keep <img> because they’re lightweight PNGs */}
-      <img src={`${base}/element_55.png`} className="absolute top-[50%] left-[5%] md:left-[8%] w-8 md:w-12" alt="" />
-      <img src={`${base}/element_56.png`} className="absolute top-[5%]   right-[10%] md:right-[36%] w-9 md:w-13" alt="" />
-      <img src={`${base}/element_56.png`} className="absolute bottom-[5%] left-[10%] md:left-[31%] w-9 md:w-13" alt="" />
-      <img src={`${base}/element_58.png`} className="absolute top-[10%]  right-[5%]  md:right-[40%] w-[20%] md:w-[27%]" alt="" />
-      <img src={`${base}/element_57.png`} className="absolute bottom-[10%] right-[5%] md:right-[13%] w-9 md:w-13" alt="" />
+      <img src={`${base}/element_55.png`} className="hue-rotate-220 absolute top-[50%] left-[5%] md:left-[8%] w-8 md:w-12" alt="" />
+      <img src={`${base}/element_56.png`} className="hue-rotate-220 absolute top-[5%]   right-[10%] md:right-[36%] w-9 md:w-13" alt="" />
+      <img src={`${base}/element_56.png`} className="hue-rotate-220 absolute bottom-[5%] left-[10%] md:left-[31%] w-9 md:w-13" alt="" />
+      <img src={`${base}/element_58.png`} className="hue-rotate-220 absolute top-[10%]  right-[5%]  md:right-[40%] w-[20%] md:w-[27%]" alt="" />
+      <img src={`${base}/element_57.png`} className="hue-rotate-220 absolute bottom-[10%] right-[5%] md:right-[13%] w-9 md:w-13" alt="" />
 
       {/* -------------- counters -------------- */}
       <div className="flex flex-wrap justify-center md:py-0 py-5 items-center gap-y-8 gap-x-8 md:gap-0 z-10">

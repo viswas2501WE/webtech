@@ -117,13 +117,13 @@ export default function Part11() {
             src={`${IMG}/author-img_2.jpg`}
             alt=""
             className="absolute bottom-[4%] left-[67%] rounded-xl w-[17%]"
-            loading="lazy"
+            loading="lazy" 
           />
           <img
             ref={(el) => (imgRefs.current[2] = el)}
             src={`${IMG}/element-01.png`}
             alt=""
-            className="absolute left-[60%] w-[12%] pointer-events-none"
+            className="absolute left-[60%] w-[12%] pointer-events-none hue-rotate-220"
             style={{ top: '-10%' }}
             loading="lazy"
           />
@@ -132,7 +132,7 @@ export default function Part11() {
             alt=""
             width={120}
             height={120}
-            className="absolute -bottom-[7%] left-[28%] w-[28%] -z-10 animate-[moveya_10s_ease-in-out_infinite]"
+            className="absolute -bottom-[7%] left-[28%] w-[28%] -z-10 animate-[moveya_10s_ease-in-out_infinite] "
           />
           <Image
             src={`${IMG}/element_24.png`}
@@ -146,14 +146,14 @@ export default function Part11() {
             alt=""
             width={120}
             height={120}
-            className="absolute top-[50%] left-[32%] w-[12%] -z-10 animate-[movexa_10s_ease-in-out_infinite]"
+            className="absolute top-[50%] left-[32%] w-[12%] -z-10 animate-[movexa_10s_ease-in-out_infinite] "
           />
           <Image
             src={`${IMG}/element_23.png`}
             alt=""
             width={120}
             height={120}
-            className="absolute -top-[20%] left-[15%] w-[30%] -z-10 animate-[moveya_10s_ease-in-out_infinite]"
+            className="absolute -top-[20%] left-[15%] w-[30%] -z-10 animate-[moveya_10s_ease-in-out_infinite] hue-rotate-220"
           />
           <style jsx>{`
             @keyframes movexa {
@@ -193,7 +193,7 @@ export default function Part11() {
           style={{ fontFamily: 'Roboto, sans-serif' }}
         >
           <p>Testimonials</p>
-          <span className="inline-block w-12 h-0.5 bg-[#F85C70]" />
+          <span className="inline-block w-12 h-0.5 bg-[#1A96D5]" />
         </div>
 
         <h2

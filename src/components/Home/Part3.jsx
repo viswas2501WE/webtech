@@ -19,7 +19,7 @@ export default function Part3() {
 
           {/* heading */}
           <div className="pb-10 text-center">
-            <div className="font-[500] text-lg text-[#FF3A4F]" style={{ fontFamily: 'Roboto, sans-serif' }}>
+            <div className="font-[500] text-lg text-[#1A96D5]" style={{ fontFamily: 'Roboto, sans-serif' }}>
               WHY CHOOSE US
             </div>
             <div className="font-[600] text-[5vh] md:text-[5.5vh] lg:text-[6vh]" style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -86,7 +86,7 @@ function ServiceCard({ href, img, title, text }) {
     >
       <div className="flex lg:flex-col items-center mb-4">
         <div className="w-16 h-16 lg:w-24 lg:h-24 sm:w-20 lg:mb-[5%] sm:h-20 bg-[#F8F8F8] rounded-full flex justify-center items-center mr-4 lg:mr-0">
-          <img src={img} alt={title} className="w-10 sm:w-12" />
+          <img src={img} alt={title} className="w-10 sm:w-12 hue-rotate-220" />
         </div>
         <div
           className="font-[600] text-[2.5vh] md:text-[3vh] lg:text-[3.5vh] text-left"

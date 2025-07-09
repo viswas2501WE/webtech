@@ -31,8 +31,8 @@ const OT1Common = ({ member }) => {
       <svg xmlns="http://www.w3.org/2000/svg" width="54.863" height="134.501" viewBox="0 0 54.863 134.501" className="absolute -right-1 top-[5%]">
         <defs>
                     <linearGradient id="linear-gradient-0" x1="0.411" y1="0.312" x2="0" y2="1" gradientUnits="objectBoundingBox">
-                        <stop offset="0" stopColor="#ff8345"></stop>
-                        <stop offset="1" stopColor="#f85c70"></stop>
+                        <stop offset="0" stopColor="#242D65"></stop>
+                        <stop offset="1" stopColor="#1A96D5"></stop>
                     </linearGradient>
 
                 </defs>

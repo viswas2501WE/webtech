@@ -17,7 +17,7 @@ export default function Part2() {
   });
 
   /* ---------- image URLs ---------- */
-  const heroImg = `${process.env.NEXT_PUBLIC_IMG_url}/espire-vox-about-us-1-2048x1886.png`;
+  const heroImg = `${process.env.NEXT_PUBLIC_IMG_url}/mascot 2.png`;
 
   return (
     <div className="relative flex justify-center overflow-hidden items-center w-full lg:my-20 leading-7">
@@ -48,11 +48,11 @@ export default function Part2() {
           className="w-full lg:w-[49%] px-2 lg:px-0"
         >
           <div
-            className="font-[500] flex items-center text-[#FF8345] text-base sm:text-lg"
+            className="font-[500] flex items-center text-[#242D65] text-base sm:text-lg"
             style={{ fontFamily: 'Roboto, sans-serif' }}
           >
             <h1 className="pr-2 sm:pr-5">About Us</h1>
-            <span className="h-0.5 w-24 sm:w-36 bg-[#FF8345] inline-block" />
+            <span className="h-0.5 w-24 sm:w-36 bg-[#242D65] inline-block" />
           </div>
 
           <h2

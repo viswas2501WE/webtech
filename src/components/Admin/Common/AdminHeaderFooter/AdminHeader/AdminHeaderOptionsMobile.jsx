@@ -34,8 +34,8 @@ export default function AdminHeaderOptionsMobile({ onClose }) {
             className={`
               flex items-center py-2 px-2 rounded-md text-sm transition-colors
               ${pathname.startsWith(item.path)
-                ? 'text-[#F85C70]'
-                : 'text-black hover:text-[#F85C70]'}
+                ? 'text-[#1A96D5]'
+                : 'text-black hover:text-[#1A96D5]'}
             `}
           >
             {item.label}

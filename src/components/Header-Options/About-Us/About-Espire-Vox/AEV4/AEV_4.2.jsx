@@ -13,7 +13,7 @@ const AccordionItem = ({ title, content, isOpen, toggleAccordion }) => {
       >
         <span className="text-lg font-[600] text-gray-600">{title}</span>
         <svg
-          className={`w-6 h-6 text-red-500 transition-transform duration-300 ease-in-out ${
+          className={`w-6 h-6 text-[#1A96D5] transition-transform duration-300 ease-in-out ${
             isOpen ? 'rotate-45' : ''
           }`}
           fill="none"

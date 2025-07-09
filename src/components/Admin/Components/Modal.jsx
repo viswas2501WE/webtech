@@ -24,7 +24,7 @@ const Modal = ({ children, onClose }) => {
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 scroll-m-0 bg-black/20 bg-opacity-50 backdrop-blur-sm" >
       <button
           onClick={onClose}
-          className="fixed top-[15%] flex justify-center items-center right-[11%] lg:right-[9%] text-white hover:text-[#f85C70] text-3xl w-[9.5%] lg:w-[2.5%]  h-10 font-bold p-2 rounded-full bg-[#F85C70] hover:bg-black/10 hover:backdrop-blur-lg transition-colors duration-200 z-10"
+          className="fixed top-[15%] flex justify-center items-center right-[11%] lg:right-[9%] text-white hover:text-[#1A96D5] text-3xl w-[9.5%] lg:w-[2.5%]  h-10 font-bold p-2 rounded-full bg-[#1A96D5] hover:bg-black/10 hover:backdrop-blur-lg transition-colors duration-200 z-10"
           aria-label="Close modal"
         >
           &times;

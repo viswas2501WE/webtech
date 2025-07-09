@@ -132,7 +132,7 @@ const Part7 = () => {
       <div className="flex flex-col lg:flex-row justify-between items-center px-5 sm:px-10 lg:px-[12.5%] text-center lg:text-left">
         <div className="w-full lg:w-[55%] mb-8 lg:mb-0">
           <div
-            className="font-[500] text-xl sm:text-lg text-[#F85C70]"
+            className="font-[500] text-xl sm:text-lg text-[#1A96D5]"
             style={{ fontFamily: 'Roboto, sans-serif' }}
           >
             WHAT WE DO
@@ -197,8 +197,8 @@ const Part7 = () => {
             onClick={() => scrollToCard(idx)}
             className={`w-7 h-2 sm:w-8.5 sm:h-2.5 rounded-lg cursor-pointer ${
               currentSlide === idx
-                ? 'bg-[#FF3147] border border-[#F85C70]'
-                : 'bg-transparent border border-[#F85C70]'
+                ? 'bg-[#1A96D5] border border-[#1A96D5]'
+                : 'bg-transparent border border-[#1A96D5]'
             }`}
           />
         ))}

@@ -177,10 +177,10 @@ function OP2() {
                 <button
                   style={{ fontFamily: "Roboto, sans-serif" }}
                   type='submit'
-                  className={`relative font-[500] overflow-hidden text-white w-full sm:w-auto h-13.5 px-8 rounded-[2rem] group flex justify-center cursor-pointer items-center bg-[#F85C70] z-0 transition-all duration-300`}
+                  className={`relative font-[500] overflow-hidden text-white w-full sm:w-auto h-13.5 px-8 rounded-[2rem] group flex justify-center cursor-pointer items-center bg-[#1A96D5] z-0 transition-all duration-300`}
                 >
                   {/* Water fill animation layer */}
-                  <div className="absolute inset-0 bg-[#FF3147] transform scale-y-0 origin-bottom transition-transform duration-500 ease-in-out group-hover:scale-y-100 z-0" />
+                  <div className="absolute inset-0 bg-[#242D65] transform scale-y-0 origin-bottom transition-transform duration-500 ease-in-out group-hover:scale-y-100 z-0" />
 
                   {/* Content with image + label */}
                   <div className="flex items-center justify-center relative z-10 py-2">

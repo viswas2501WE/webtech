@@ -11,7 +11,7 @@ function AdminHeaderOptions() {
   
 
   const baseClass =
-    'hover:text-[#FF3147] transition-colors duration-300 cursor-pointer py-12 px-4'; // Added px-4 for spacing
+    'hover:text-[#1A96D5] transition-colors duration-300 cursor-pointer py-12 px-4'; // Added px-4 for spacing
   const defaultTextColorClass = isScrolled? "text-black" : "text-white" // Admin header will always be on a white background
 
   const combinedBaseClass = `${baseClass} ${defaultTextColorClass}`;
@@ -46,7 +46,7 @@ function AdminHeaderOptions() {
           href={path}
           className={
             pathname.startsWith(path)
-              ? 'text-[#F85C70] py-12 px-4' // Added px-4 for spacing
+              ? 'text-[#1A96D5] py-12 px-4' // Added px-4 for spacing
               : combinedBaseClass
           }
         >

@@ -37,7 +37,7 @@ export default function Part13() {
           alt=""
           width={180}
           height={180}
-          className="absolute bottom-10 -left-20"
+          className="absolute bottom-10 -left-20 hue-rotate-220"
         />
 
         {/* pulsing blobs */}
@@ -46,14 +46,14 @@ export default function Part13() {
           alt=""
           width={500}
           height={500}
-          className="absolute top-[15%] -left-[2%] w-[50vh] h-[50vh] animate-[scalePulse_7s_ease-in-out_infinite] pointer-events-none z-0"
+          className="absolute top-[15%] -left-[2%] w-[50vh] h-[50vh] animate-[scalePulse_7s_ease-in-out_infinite] pointer-events-none z-0 hue-rotate-220"
         />
         <Image
           src={`${IMG}/element_44.png`}
           alt=""
           width={500}
           height={500}
-          className="absolute top-[10%] -right-[5%] w-[50vh] h-[50vh] animate-[scalePulse_7s_ease-in-out_infinite] pointer-events-none z-0"
+          className="absolute top-[10%] -right-[5%] w-[50vh] h-[50vh] animate-[scalePulse_7s_ease-in-out_infinite] pointer-events-none z-0 hue-rotate-220"
         />
 
         {/* floating element on a polygon path */}
@@ -62,7 +62,7 @@ export default function Part13() {
           alt=""
           width={140}
           height={140}
-          className="absolute top-[10%] right-[10%] w-35 h-35 animate-[floatPath_14s_linear_infinite] origin-center pointer-events-none z-0"
+          className="absolute top-[10%] right-[10%] w-35 h-35 animate-[floatPath_14s_linear_infinite] origin-center pointer-events-none z-0 hue-rotate-220"
         />
 
         {/* local keyframes */}
@@ -107,7 +107,7 @@ export default function Part13() {
         >
           <span>
             Find&nbsp;Us
-            <span className="block w-8 h-0.5 bg-[#F85C70]" />
+            <span className="block w-8 h-0.5 bg-[#1A96D5]" />
           </span>
         </h3>
 

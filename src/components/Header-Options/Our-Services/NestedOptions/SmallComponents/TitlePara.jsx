@@ -4,7 +4,7 @@
 
 const TitlePara = ({ title = '' , para = ''  }) => (
   <div className="mb-[5vh] relative">
-    <span className="block absolute w-[6vh] h-[6vh] rounded-full bg-[#ffe3e5] -z-50 -top-[0.6vh] -left-[1.5vh]" />
+    <span className="block absolute w-[6vh] h-[6vh] rounded-full bg-[#ceefff] -z-50 -top-[0.6vh] -left-[1.5vh]" />
     <h2
       className="text-4xl md:text-[4.5vh] uppercase font-[600] mb-[3vh]"
       style={{ fontFamily: "Poppins, sans-serif" }}

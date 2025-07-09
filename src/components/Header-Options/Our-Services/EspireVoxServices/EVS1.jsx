@@ -15,7 +15,7 @@ const EVS1 = ({EVS1Title1, EVS1Title2, EVS1Para1, EVS1Para2, EVS1Img}) => {
     <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between px-4 sm:px-6 md:px-8 lg:px-[10%] py-8 md:py-12 lg:py-16" style={{ fontFamily: 'Roboto, sans-serif' }}>
       {/* Text Section */}
       <div className="mb-8 lg:mb-0 w-full lg:w-1/2 px-4 sm:px-6 lg:pl-[5%] text-left lg:text-left">
-        <h1 className="text-base sm:text-lg md:text-xl font-[500] text-[#F85C70] mb-2 sm:mb-4">
+        <h1 className="text-base sm:text-lg md:text-xl font-[500] text-[#1A96D5] mb-2 sm:mb-4">
           {EVS1Title1}
         </h1>
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-[600] text-gray-900 mb-4 sm:mb-6 leading-tight" style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -39,7 +39,7 @@ const EVS1 = ({EVS1Title1, EVS1Title2, EVS1Para1, EVS1Para2, EVS1Img}) => {
           width="100%"
           height="auto"
           viewBox={svgViewBox}
-          className="max-w-sm sm:max-w-md md:max-w-lg lg:max-w-full"
+          className="max-w-sm sm:max-w-md md:max-w-lg lg:max-w-full hue-rotate-220"
         >
           <defs>
             <clipPath id={clipPathId}>

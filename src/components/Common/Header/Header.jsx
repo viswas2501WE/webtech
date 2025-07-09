@@ -54,10 +54,10 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const logoUrl = `${process.env.NEXT_PUBLIC_IMG_url1}/espire-vox-logo.png`;
+  const logoUrl = `${process.env.NEXT_PUBLIC_IMG_url1}/webtech.png`;
 
   return (
-    <div className="relative text-black">
+    <div className="relative text-black" style={{zIndex: 2000}}>
       <div
         className={`top-0 xl:flex hidden left-0 w-full z-50 justify-center transition-all duration-700 ease-in-out ${
           isScrolled ? "fixed bg-white shadow-lg" : "absolute bg-transparent pt-[2vh]"
@@ -69,7 +69,7 @@ const Header = () => {
           <div style={{ width: "15.4%" }}>
             <Link href="/">
               <Image
-                width={200}
+                width={300}
                 height={60}
                 src={logoUrl}
                 alt="Espire Vox Logo"
@@ -90,20 +90,20 @@ const Header = () => {
                 style={{ boxShadow: "revert-layer" }}
               >
                 <div className="relative w-5 h-4">
-                  <span className={`absolute left-0 h-0.5 w-full bg-pink-500 rounded transition-transform duration-300 ease-in-out ${isOpen ? "rotate-45 top-1.5" : "top-0"}`}></span>
-                  <span className={`absolute left-0 h-0.5 w-full bg-pink-500 rounded transition-all duration-300 ease-in-out ${isOpen ? "opacity-0" : "top-1.5"}`}></span>
-                  <span className={`absolute left-0 h-0.5 w-full bg-pink-500 rounded transition-transform duration-300 ease-in-out ${isOpen ? "-rotate-45 bottom-2" : "bottom-0"}`}></span>
+                  <span className={`absolute left-0 h-0.5 w-full bg-[#1A96D5] rounded transition-transform duration-300 ease-in-out ${isOpen ? "rotate-45 top-1.5" : "top-0"}`}></span>
+                  <span className={`absolute left-0 h-0.5 w-full bg-[#1A96D5] rounded transition-all duration-300 ease-in-out ${isOpen ? "opacity-0" : "top-1.5"}`}></span>
+                  <span className={`absolute left-0 h-0.5 w-full bg-[#1A96D5] rounded transition-transform duration-300 ease-in-out ${isOpen ? "-rotate-45 bottom-2" : "bottom-0"}`}></span>
                 </div>
               </button>
 
               {/* Sidebar */}
               <div
-                ref={sidebarRef}
-                className={`fixed top-0 left-0 h-full w-40/155 p-6 bg-white shadow-2xl overflow-auto transform transition-transform duration-500 ease-in-out z-50 ${
-                  isOpen ? "translate-x-0" : "-translate-x-full"
-                }`}
-                style={{ scrollbarWidth: "none" }}
-              >
+  ref={sidebarRef}
+  className={`fixed top-0 left-0 h-full w-40/155 p-6 bg-white shadow-2xl overflow-auto transform transition-transform duration-500 ease-in-out z-50 ${
+    isOpen ? "translate-x-0" : "-translate-x-full"
+  }`}
+  style={{ scrollbarWidth: "none" }}
+>
                 <div className="flex justify-between justify-self-center items-center py-6" style={{ width: "84%" }}>
                   <Link href="/" className="w-fit">
                     <Image
@@ -116,7 +116,7 @@ const Header = () => {
                   </Link>
 
                   <div
-                    className="flex justify-center items-center cursor-pointer h-[3vw]  bg-[#F85C70] rounded-full"
+                    className="flex justify-center items-center cursor-pointer h-[3vw]  bg-[#1A96D5] rounded-full"
                     style={{ width: "16%" }}
                     onClick={() => setIsOpen(false)}
                   >
@@ -132,12 +132,12 @@ const Header = () => {
         {scrollTop && (
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="fixed bottom-7 right-7 z-50 group overflow-hidden w-10 h-10 rounded-sm bg-[#F85C70] flex justify-center items-center transition-all duration-700 ease-in-out"
+            className="fixed bottom-7 right-7 z-50 group overflow-hidden w-10 h-10 rounded-sm bg-[#1A96D5] flex justify-center items-center transition-all duration-700 ease-in-out"
             aria-label="Scroll to top"
             style={{ fontFamily: "Roboto, sans-serif" }}
             onMouseEnter={handleHover}
           >
-            <div className="absolute inset-0 bg-[#FF3147] z-0 transform scale-y-0 origin-bottom transition-transform duration-500 ease-in-out group-hover:scale-y-100" />
+            <div className="absolute inset-0 bg-[#242D65] z-0 transform scale-y-0 origin-bottom transition-transform duration-500 ease-in-out group-hover:scale-y-100" />
             <motion.div className="relative z-10 text-white" animate={controls} initial={{ y: 0 }}>
               <FaArrowUp className="transition-transform duration-300" />
             </motion.div>

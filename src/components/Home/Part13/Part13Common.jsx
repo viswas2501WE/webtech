@@ -21,21 +21,21 @@ export default function Part13Common({ name, icon: Icon }) {
       {/* top-left corner  */}
       <span className="absolute top-[10%] left-[4%] w-6 h-4 border-t-2 border-l-2 border-white
                        group-hover:w-[calc(100%-8%)] group-hover:h-[calc(100%-20%)]
-                       group-hover:border-[#F85C70] transition-all duration-400" />
+                       group-hover:border-[#1A96D5] transition-all duration-400" />
       {/* bottom-right corner */}
       <span className="absolute bottom-[10%] right-[4%] w-6 h-4 border-b-2 border-r-2 border-white
                        group-hover:w-[calc(100%-8%)] group-hover:h-[calc(100%-20%)]
-                       group-hover:border-[#F85C70] transition-all duration-400" />
+                       group-hover:border-[#1A96D5] transition-all duration-400" />
 
       {/* circular icon */}
-      <span className="bg-white group-hover:bg-[#F85C70] w-10 h-10 flex items-center justify-center rounded-full
+      <span className="bg-white group-hover:bg-[#1A96D5] w-10 h-10 flex items-center justify-center rounded-full
                        transition-colors duration-400">
         <Icon className="text-2xl text-[#0F285F]" />
       </span>
 
       {/* label */}
       <span
-        className="font-bold text-3xl group-hover:text-[#F85C70] transition-colors duration-400"
+        className="font-bold text-3xl group-hover:text-[#1A96D5] transition-colors duration-400"
         style={{ fontFamily: 'Roboto, sans-serif' }}
       >
         {name}

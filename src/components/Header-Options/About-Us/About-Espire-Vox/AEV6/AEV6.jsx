@@ -100,7 +100,7 @@ export default function AEV6() {
       <div className="mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center z-10">
         {/* ---------- left column (text + arrows) ---------- */}
         <div className="text-center lg:text-left w-full lg:w-[80%]">
-          <p className="text-red-500 text-lg tracking-wider mb-2 font-[500]">
+          <p className="text-[#fff] text-lg tracking-wider mb-2 font-[500]">
             Testimonials
           </p>
           <h2
@@ -121,7 +121,7 @@ export default function AEV6() {
           <div className="flex justify-center lg:justify-start space-x-4">
             <button
               onClick={() => sliderRef.current?.slickPrev()}
-              className="group flex cursor-pointer justify-center items-center p-3 rounded-full bg-white w-[6.5vh] h-[6.5vh] shadow-md hover:bg-[#FF3147] transition-colors duration-400"
+              className="group flex cursor-pointer justify-center items-center p-3 rounded-full bg-white w-[6.5vh] h-[6.5vh] shadow-md hover:bg-[#1A96D5] transition-colors duration-400"
               aria-label="Previous testimonial"
             >
               {/* same SVG as original */}
@@ -135,14 +135,14 @@ export default function AEV6() {
                   <path
                     d="M6,0l6,9H0Z"
                     transform="translate(0 12) rotate(-90)"
-                    fill="#ff3147"
+                    fill="#1A96D5"
                     className="group-hover:fill-white transition-colors duration-400"
                   />
                   <rect
                     width="15"
                     height="2"
                     transform="translate(9 5)"
-                    fill="#ff3147"
+                    fill="#1A96D5"
                     className="group-hover:fill-white transition-colors duration-400"
                   />
                 </g>
@@ -151,7 +151,7 @@ export default function AEV6() {
 
             <button
               onClick={() => sliderRef.current?.slickNext()}
-              className="group cursor-pointer flex justify-center items-center p-3 rounded-full bg-white w-[6.5vh] h-[6.5vh] shadow-md hover:bg-[#FF3147] transition-colors duration-400"
+              className="group cursor-pointer flex justify-center items-center p-3 rounded-full bg-white w-[6.5vh] h-[6.5vh] shadow-md hover:bg-[#1A96D5] transition-colors duration-400"
               aria-label="Next testimonial"
             >
               <svg
@@ -164,14 +164,14 @@ export default function AEV6() {
                   <path
                     d="M6,0l6,9H0Z"
                     transform="translate(24) rotate(90)"
-                    fill="#ff3147"
+                    fill="#1A96D5"
                     className="group-hover:fill-white transition-colors duration-400"
                   />
                   <rect
                     width="15"
                     height="2"
                     transform="translate(0 5)"
-                    fill="#ff3147"
+                    fill="#1A96D5"
                     className="group-hover:fill-white transition-colors duration-400"
                   />
                 </g>

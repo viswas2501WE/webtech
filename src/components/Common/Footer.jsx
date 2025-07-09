@@ -9,7 +9,7 @@ export default function Footer() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   /* external logo via env variable */
-  const logoSrc = `${process.env.NEXT_PUBLIC_IMG_url}/espire-vox-logo-.png`;
+  const logoSrc = `${process.env.NEXT_PUBLIC_IMG_url}/webtech.png`;
 
   return (
     <div className="relative overflow-hidden text-black">
@@ -56,7 +56,7 @@ export default function Footer() {
               <Link
                 key={l.label}
                 href={l.href}
-                className="hover:text-[#F85C70] transition-colors flex duration-300"
+                className="hover:text-[#1A96D5] transition-colors flex duration-300"
               >
                 {l.label}
               </Link>
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
 
         {/* divider & copyright */}
-        <span className="h-0.5 w-[75.5%] bg-[#F85C70] mx-auto block" />
+        <span className="h-0.5 w-[75.5%] bg-[#1A96D5] mx-auto block" />
 
         <h1
           style={{ fontFamily: 'Roboto, sans-serif' }}

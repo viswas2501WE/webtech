@@ -122,8 +122,8 @@ function NextArrow({ onClick }) {
   return (
     <div
       onClick={onClick}
-      className="absolute flex items-center justify-center w-8 h-8 bg-white border border-[#F85C70]
-                 top-[80%] right-0 rounded-full text-[#F85C70] hover:text-white hover:bg-[#F85C70]
+      className="absolute flex items-center justify-center w-8 h-8 bg-white border border-[#1A96D5]
+                 top-[80%] right-0 rounded-full text-[#1A96D5] hover:text-white hover:bg-[#1A96D5]
                  transition-colors duration-300 z-10 cursor-pointer"
     >
       <FaArrowRight className="text-sm" />
@@ -135,9 +135,9 @@ function PrevArrow({ onClick }) {
   return (
     <div
       onClick={onClick}
-      className="absolute flex items-center justify-center w-8 h-8 bg-white border border-[#F85C70]
-                 top-[80%] right-[10%] lg:right-[9%] xl:right-[7%] rounded-full text-[#F85C70]
-                 hover:text-white hover:bg-[#F85C70] transition-colors duration-300 z-10 cursor-pointer"
+      className="absolute flex items-center justify-center w-8 h-8 bg-white border border-[#1A96D5]
+                 top-[80%] right-[10%] lg:right-[9%] xl:right-[7%] rounded-full text-[#1A96D5]
+                 hover:text-white hover:bg-[#1A96D5] transition-colors duration-300 z-10 cursor-pointer"
     >
       <FaArrowLeft className="text-sm" />
     </div>

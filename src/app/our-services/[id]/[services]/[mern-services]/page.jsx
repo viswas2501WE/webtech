@@ -68,7 +68,7 @@ const MernstackPage = () => {
         <Circle img1={item.img11} img2={item.img12} img3={item.img13} img4={item.img14} />
         <div className="min-h-fit lg:min-h-screen justify-center xl:px-0 relative xl:-left-[5%] px-[5%] xl:pt-[10vh] w-full xl:w-[55%]">
           <div className="w-full xl:w-[75%]">
-            <h1 className="font-[500] text-lg text-[#FF8345]">{item.evst1}</h1>
+            <h1 className="font-[500] text-lg text-[#242D65]">{item.evst1}</h1>
             <h1 className="font-[600] text-5xl uppercase py-[4%] leading-16" style={{ fontFamily: 'Poppins, sans-serif' }}>{item.evst2}</h1>
             <div className="font-[500] text-base w-[100%] leading-7 text-gray-600">{item.evsp1}</div>
             <div className="flex-col flex md:flex-row pt-[8%]">

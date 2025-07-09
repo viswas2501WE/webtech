@@ -135,7 +135,7 @@ const Applicants = () => {
       ) : (
         <div className="overflow-x-auto rounded-lg shadow-xl border border-gray-200">
           <table className="min-w-full bg-white divide-y divide-gray-200">
-            <thead className="bg-[#F85C70] text-white">
+            <thead className="bg-[#1A96D5] text-white">
               <tr>
                 <th className="px-6 py-[2%] text-left text-xs font-medium uppercase tracking-wider rounded-tl-lg">Name</th>
                 <th className="px-6 py-[2%] text-left border-l border-gray-300 text-xs font-medium uppercase tracking-wider">Email</th>

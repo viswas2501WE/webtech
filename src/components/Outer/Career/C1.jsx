@@ -66,8 +66,8 @@ export default function C1() {
                 className="w-full lg:w-[43%] px-4 text-left"
             >
                 <div>
-                    <h1 className="text-[#F85C70] font-[500] text-lg md:text-xl lg:text-[2.5vh]">CAREER</h1>
-                    <span className="text-[#F85C70] border-t-2 border-dotted block w-[15%] md:w-[7%]"></span>
+                    <h1 className="text-[#1A96D5] font-[500] text-lg md:text-xl lg:text-[2.5vh]">CAREER</h1>
+                    <span className="text-[#1A96D5] border-t-2 border-dotted block w-[15%] md:w-[7%]"></span>
                     <h1
                         className="font-[600] text-3xl md:text-4xl lg:text-[5.5vh] py-[1vh]"
                         style={{ fontFamily: 'Poppins, sans-serif' }}

@@ -39,7 +39,7 @@ export default function Part6Common({ title, count, paddingClass }) {
       >
         {/* red sliding background */}
         <motion.div
-          className="absolute top-0 left-0 h-full w-full bg-red-500 z-0 origin-left"
+          className="absolute top-0 left-0 h-full w-full bg-[#242D65] z-0 origin-left"
           style={{ originX: isHovered ? 0 : 1 }}
           animate={{ scaleX: isHovered ? 1 : 0 }}
           transition={{ duration: 0.3 }}

@@ -58,7 +58,7 @@ export default function Part12() {
   return (
     <section
       className="min-h-[41vh] py-12 overflow-hidden"
-      style={{ background: 'linear-gradient(90deg,#f85c70 0%,#ff8345 100%)' }}
+      style={{ background: 'linear-gradient(90deg,#F85C70 0%,#242D65 100%)' }}
     >
       <h3
         className="text-center font-[500] text-white text-[3vh] sm:text-[4vh] md:text-[2.5vh]"
