@@ -1,7 +1,7 @@
 'use client';
 
-import AdminHeader from '@/components/Admin96@Charlie/Common/AdminHeaderFooter/AdminHeader/AdminHeader';
-import AdminFooter from '@/components/Admin96@Charlie/Common/AdminHeaderFooter/AdminFooter/AdminFooter';
+import AdminHeader from '@/components/Admin/Common/AdminHeaderFooter/AdminHeader/AdminHeader';
+import AdminFooter from '@/components/Admin/Common/AdminHeaderFooter/AdminFooter/AdminFooter';
 import VerticalBackground from '@/components/Common/Bg';
 import ScrollToTop from '@/components/ScrollToTop';
 import React, { useEffect, useRef, useState } from 'react';

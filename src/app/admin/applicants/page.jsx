@@ -2,8 +2,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import ApplicantsCard from '@/components/Admin96@Charlie/Components/ApplicantsCard';
-import Modal from '@/components/Admin96@Charlie/Components/Modal';
+import ApplicantsCard from '@/components/Admin/Components/ApplicantsCard';
+import Modal from '@/components/Admin/Components/Modal';
 import { MoreHorizontalIcon } from 'lucide-react';
 import 'flowbite';
 import PageCover from '@/components/PageCover';

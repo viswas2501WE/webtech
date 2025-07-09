@@ -21,7 +21,7 @@ const pagesData = [
     banner: `${BASE}/banner-2-our-services.jpg`,
     title1: 'Empowering Innovation, Driving Digital Excellence.',
     title2: 'Our Diverse Services Catering to all Businesses!',
-    description1: 'Espire Vox is a leading force in the realm of Information Technology. Established in 2014, we have been at the forefront of delivering cutting-edge IT solutions that propel businesses into the future. Our commitment to innovation, quality, and client satisfaction has made us a trusted partner for organizations seeking transformative digital experiences. Our process started with a dream to give unrivaled IT benefits that enable organizations to flourish in the computerized age. Over the years, we have evolved into a dynamic and forward-thinking company, staying ahead of industry trends to offer solutions that meet the ever-changing needs of our clients. Additionally, with the rapid evolution of technology, we are continually adapting and expanding our service offerings to meet the changing needs of the industry.',
+    description1: 'Webtech Evolution is a leading force in the realm of Information Technology. Established in 2014, we have been at the forefront of delivering cutting-edge IT solutions that propel businesses into the future. Our commitment to innovation, quality, and client satisfaction has made us a trusted partner for organizations seeking transformative digital experiences. Our process started with a dream to give unrivaled IT benefits that enable organizations to flourish in the computerized age. Over the years, we have evolved into a dynamic and forward-thinking company, staying ahead of industry trends to offer solutions that meet the ever-changing needs of our clients. Additionally, with the rapid evolution of technology, we are continually adapting and expanding our service offerings to meet the changing needs of the industry.',
     image: `service-8-1963x2048.png`,
     serviceIds: [
       services[0]?.id, // Branding-Elements
@@ -63,8 +63,8 @@ const pagesData = [
     banner: `${BASE}/Web-Development-banner.png`,
     title1: 'EFFORTLESS EFFICIENCY',
     title2: 'Navigating Our Seamless Process',
-    description1: 'Espire Vox specializes in Web and App development, blending expertise and passion to harmonize design and functionality, crafting highly dependable websites tailored precisely to meet your business needs with accuracy and scalability. CMS-based and custom websites offer a crucial competitive advantage and adaptability.',
-    description2: 'At Espire Vox, our adept team of software programmers is equipped to deliver customized solutions to your requirements. We design CMS-based websites featuring a user-friendly back-end panel for effortless page management. Adhering to standard programming practices, our coding ensures a search engine-friendly structure, facilitating better search results by enabling seamless crawling of content, images, and links on the website.',
+    description1: 'Webtech Evolution specializes in Web and App development, blending expertise and passion to harmonize design and functionality, crafting highly dependable websites tailored precisely to meet your business needs with accuracy and scalability. CMS-based and custom websites offer a crucial competitive advantage and adaptability.',
+    description2: 'At Webtech Evolution, our adept team of software programmers is equipped to deliver customized solutions to your requirements. We design CMS-based websites featuring a user-friendly back-end panel for effortless page management. Adhering to standard programming practices, our coding ensures a search engine-friendly structure, facilitating better search results by enabling seamless crawling of content, images, and links on the website.',
     image: `service-4-2048x1989.png`,
     serviceIds: [
         services[22]?.id, // WordPress-Development
@@ -84,7 +84,7 @@ const pagesData = [
     banner: `${BASE1}/Ourservices-banner-8.png`,
     title1: 'USER FRIENDLY APPS',
     title2: 'Enhancing Digital Experiences!',
-    description1: `At Espire Vox, we don't just build mobile apps; we sculpt immersive digital experiences that captivate, engage, and elevate your brand. As an upcoming mobile app development company, we combine cutting-edge technology with creative prowess to turn your vision into reality. We are architects of innovation, constantly pushing boundaries to create mobile apps that stand out in a crowded digital landscape. Your users are at the heart of our design philosophy. We craft intuitive and visually stunning interfaces that provide a seamless and delightful experience. With a team of skilled developers, we embrace the latest technologies to ensure your mobile app is not just functional but at the forefront of industry standards.`,
+    description1: `At Webtech Evolution, we don't just build mobile apps; we sculpt immersive digital experiences that captivate, engage, and elevate your brand. As an upcoming mobile app development company, we combine cutting-edge technology with creative prowess to turn your vision into reality. We are architects of innovation, constantly pushing boundaries to create mobile apps that stand out in a crowded digital landscape. Your users are at the heart of our design philosophy. We craft intuitive and visually stunning interfaces that provide a seamless and delightful experience. With a team of skilled developers, we embrace the latest technologies to ensure your mobile app is not just functional but at the forefront of industry standards.`,
     description2: '',
     image: `service-5-1885x2048.png`,
     serviceIds: [
@@ -100,7 +100,7 @@ const pagesData = [
     banner: `${BASE}/E-Commerce-Solutions-banner.png`,
     title1: 'SELL ONLINE!',
     title2: 'Crafting E-Commerce Stores That Sell While You Sleep!',
-    description1: `A visually appealing website is beneficial, but one that drives sales is superior. At Espire Vox, we comprehend your eCommerce business goals and offer comprehensive solutions. This includes enticing product catalogs, secure payment gateways, and enjoyable shopping experiences for your valued customers. We employ cost-effective and user-friendly E-Commerce open source platforms such as WooCommerce, Shopify, Laravel, BigCommerce and Magento to ensure your portal is functional, adaptable, and user-friendly.`,
+    description1: `A visually appealing website is beneficial, but one that drives sales is superior. At Webtech Evolution, we comprehend your eCommerce business goals and offer comprehensive solutions. This includes enticing product catalogs, secure payment gateways, and enjoyable shopping experiences for your valued customers. We employ cost-effective and user-friendly E-Commerce open source platforms such as WooCommerce, Shopify, Laravel, BigCommerce and Magento to ensure your portal is functional, adaptable, and user-friendly.`,
     description2: ``,
     image: 'service-3-1783x2048.png',
     serviceIds: [

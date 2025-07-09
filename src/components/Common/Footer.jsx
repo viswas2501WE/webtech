@@ -28,9 +28,9 @@ export default function Footer() {
             <Image
               src={logoSrc}
               alt="Espire Vox Logo"
-              width={150}
-              height={60}
-              className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-[15.5%] xl:w-[150px] max-w-[200px]"
+              width={250}
+              height={90}
+              className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-[18.5%] xl:w-[200px] max-w-[400px]"
               priority
             />
           </div>
@@ -71,7 +71,7 @@ export default function Footer() {
           style={{ fontFamily: 'Roboto, sans-serif' }}
           className="font-[400] text-center py-10 tracking-widest text-sm sm:text-base px-4"
         >
-          © 2025 Espire Vox — All Rights Reserved.
+          © 2025 Webtech Evolution — All Rights Reserved.
         </h1>
       </motion.div>
     </div>

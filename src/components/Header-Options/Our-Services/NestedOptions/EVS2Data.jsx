@@ -41,7 +41,7 @@ export const EVS2Data = [
                     ],
                 },
             },
-            { type: "cont", props: { title: "Visual Consistency", para: "Our designers at Espire Vox work hard to ensure consistency in visual elements across all platforms. Like using a consistent color palette, logo placement, and design elements in both online and offline materials" } },
+            { type: "cont", props: { title: "Visual Consistency", para: "Our designers at Webtech Evolution work hard to ensure consistency in visual elements across all platforms. Like using a consistent color palette, logo placement, and design elements in both online and offline materials" } },
         ],
 
         right: [
@@ -77,7 +77,7 @@ export const EVS2Data = [
                             q: "Cost-effective Design Solutions",
                             content: () => (
                                 <>
-                                    <p>At Espire Vox, we offer competitive pricing structures for your brand that do not dent a hole in your pockets. As we understand that you too may just be starting out and may not be able to spend much on building a brand initially. </p>
+                                    <p>At Webtech Evolution, we offer competitive pricing structures for your brand that do not dent a hole in your pockets. As we understand that you too may just be starting out and may not be able to spend much on building a brand initially. </p>
                                 </>
                             ),
                         },
@@ -176,7 +176,7 @@ export const EVS2Data = [
         index: [0, 16, 17, 18],
 
         left: [
-            { type: "cont", props: { title: "Creative and Innovative Designs", para: "Creative designs often involve a balance of aesthetics, functionality, and innovation. They can fill different needs, from improving brand personality to giving an outwardly engaging encounter to clients or crowds. At Espire Vox, our designers delve into an ocean of creative ideas to emerge with unique, innovative and creative masterpieces that stand out from the ordinary!" } },
+            { type: "cont", props: { title: "Creative and Innovative Designs", para: "Creative designs often involve a balance of aesthetics, functionality, and innovation. They can fill different needs, from improving brand personality to giving an outwardly engaging encounter to clients or crowds. At Webtech Evolution, our designers delve into an ocean of creative ideas to emerge with unique, innovative and creative masterpieces that stand out from the ordinary!" } },
             { type: "cont", props: { title: "Design and Quality Check", para: "Every design we create undergoes thorough checking for quality of design elements, checked for maintaining standard design practices, uniformity across the website and responsiveness." } },
             { type: "cont", props: { title: "Graphics Design", para: "Our Graphic Design service promises the following deliverables: Unique and visually striking logos. Eye-catching business cards with creative layouts. Innovative packaging designs for products. Creative poster designs for events or promotions. Tools we use: Adobe Photoshop, Adobe Illustrator, Corel Draw, Canva etc." } },
         ],
@@ -190,7 +190,7 @@ export const EVS2Data = [
                             q: "Why choose us for your design project?",
                             content: () => (
                                 <>
-                                    <p>We select youthful, venturesome and innovative specialists and architects to work for our clients. Our designers get ample opportunities to design and hence learn from experience. Their skills are honed at Espire Vox and they are prepared for a bright future in design.</p>
+                                    <p>We select youthful, venturesome and innovative specialists and architects to work for our clients. Our designers get ample opportunities to design and hence learn from experience. Their skills are honed at Webtech Evolution and they are prepared for a bright future in design.</p>
                                 </>
                             ),
                         },
@@ -334,7 +334,7 @@ export const EVS2Data = [
         index: [3, 5, 6, 8],
 
         left: [
-            { type: "cont", props: { title: "Native Android App Development", para: "Our team at Espire Vox can create applications specifically tailored for a particular platform, such as iOS or Android, using the platform’s native programming languages and tools. Because native applications are built specifically for the operating system, they provide higher user engagement than hybrid apps. Our developers are well versed with programming in either JAVA or Kotlin and possess a strong understanding of their core concepts." } },
+            { type: "cont", props: { title: "Native Android App Development", para: "Our team at Webtech Evolution can create applications specifically tailored for a particular platform, such as iOS or Android, using the platform’s native programming languages and tools. Because native applications are built specifically for the operating system, they provide higher user engagement than hybrid apps. Our developers are well versed with programming in either JAVA or Kotlin and possess a strong understanding of their core concepts." } },
             {
                 type: "cont", props: {
                     title: "High Performance", para: (
@@ -499,7 +499,7 @@ export const EVS2Data = [
         left: [
             { type: "cont", props: { title: "Increased Productivity", para: "Python is highly efficient, enabling users to grasp its syntax and behavior without investing excessive time, resulting in increased productivity and accomplishing more work in less time." } },
             { type: "cont", props: { title: "Flexibility", para: "Due to its exceptional flexibility, this language empowers users to explore novel avenues. With Python, users can create innovative applications that push the boundaries of programming possibilities." } },
-            { type: "cont", props: { title: "Lead your niche with the best Python Solutions from Espire Vox", para: "Elevate your industry standing with Espire Vox's premier Python solutions. Dominate your niche with our top-tier Python expertise. Stay ahead with cutting-edge solutions tailored by Espire Vox." } },
+            { type: "cont", props: { title: "Lead your niche with the best Python Solutions from Webtech Evolution", para: "Elevate your industry standing with Webtech Evolution's premier Python solutions. Dominate your niche with our top-tier Python expertise. Stay ahead with cutting-edge solutions tailored by Webtech Evolution." } },
         ],
 
         right: [
@@ -1215,7 +1215,7 @@ export const EVS2Data = [
         coverlink: `${BASE1}/Logo-Design-Banner.png`,
         evst1: "Visual Identity",
         evst2: "Logo Design",
-        evsp1: "A logo represents the essence of an organization, embodying its identity and significance. At Espire Vox, we recognize its pivotal role, aiming to create memorable and impactful corporate identities that resonate long after the initial encounter. Espire Vox specializes in crafting innovative logos and corporate identities, prioritizing client understanding, target audience analysis, and conceptualization for exceptional design solutions.",
+        evsp1: "A logo represents the essence of an organization, embodying its identity and significance. At Webtech Evolution, we recognize its pivotal role, aiming to create memorable and impactful corporate identities that resonate long after the initial encounter. Webtech Evolution specializes in crafting innovative logos and corporate identities, prioritizing client understanding, target audience analysis, and conceptualization for exceptional design solutions.",
         img11: `${BASE1}/female-logo-designer.jpg`,
         img12: `${BASE1}/website-template-design.jpg`,
         img13: `${BASE1}/information-sign-table.png`,
@@ -2328,7 +2328,7 @@ export const EVS2Data = [
         coverlink: `${BASE}/Web-Development-banner.png`,
         evst1: "UNPARALLELED EXPERTISE",
         evst2: "Why Choose Our Knowledge and Expertise",
-        evsp1: "Discover an all-encompassing solution tailored to meet diverse business requirements, available at an unexpectedly affordable price point! At Espire Vox, our array of Open Source Solutions caters to various website development needs. Following industry-leading methodologies, we ensure timely project deliveries by adhering to the best practices.",
+        evsp1: "Discover an all-encompassing solution tailored to meet diverse business requirements, available at an unexpectedly affordable price point! At Webtech Evolution, our array of Open Source Solutions caters to various website development needs. Following industry-leading methodologies, we ensure timely project deliveries by adhering to the best practices.",
         img11: `${BASE1}/17.png`,
         img12: `${BASE1}/13.png`,
         img13: `${BASE1}/15.png`,
@@ -2457,7 +2457,7 @@ export const EVS2Data = [
                                 <>
                                     <p className="pb-[3vh]">With our adept SEO team, we delve deep into your needs, devising an effective marketing strategy that yields enduring results. Our ability to generate authentic and impactful leads significantly boosts your business and revenue.</p>
                                     <p className="pb-[3vh]">Did you know that SEO contributes to 51% of website traffic and drives 40% of revenue? Establishing an online presence enhances visibility where your customers predominantly reside. Securing top rankings is pivotal, considering most customers rarely explore beyond the first page of Google search results. To achieve high rankings, engaging an expert SEO service provider capable of generating organic traffic is essential.</p>
-                                    <p>At Espire Vox, we begin by comprehensively understanding your business and requirements. Conducting an SEO audit, we then craft an appealing strategy to attract potential business prospects. Our approach doesn’t just acquire leads; we foster engagement that transforms them into loyal brand advocates, bolstering your customer base.</p>
+                                    <p>At Webtech Evolution, we begin by comprehensively understanding your business and requirements. Conducting an SEO audit, we then craft an appealing strategy to attract potential business prospects. Our approach doesn’t just acquire leads; we foster engagement that transforms them into loyal brand advocates, bolstering your customer base.</p>
                                 </>
                             ),
                         }
@@ -2476,7 +2476,7 @@ export const EVS2Data = [
         evst2: "Why Choose Our Web Development Team",
         evsp1: (
             <>
-                <p className="pb-[3vh]">At Espire Vox, we’re a client-centric and results-oriented organization. Our team, comprised of dedicated talent and unwavering commitment, embodies a passion for all things digital. Though small in size, we strive to become an integral part of your growth journey, aiming to forge lasting and meaningful relationships with our clients.</p>
+                <p className="pb-[3vh]">At Webtech Evolution, we’re a client-centric and results-oriented organization. Our team, comprised of dedicated talent and unwavering commitment, embodies a passion for all things digital. Though small in size, we strive to become an integral part of your growth journey, aiming to forge lasting and meaningful relationships with our clients.</p>
                 <p>Each client holds significant value for us. Once your project is assigned, a dedicated team member is assigned to cater to your needs and inquiries until the project reaches a satisfactory conclusion. Outsourcing your work to us not only allows you to focus on core business areas but also proves to be cost-effective.</p>
             </>
         ),
@@ -2510,7 +2510,7 @@ export const EVS2Data = [
                             q: "Streamlined Work Process",
                             content: () => (
                                 <>
-                                    <p>At Espire Vox, our work process adheres to stringent guidelines. This involves daily target achievements, consistent client updates, direct client engagement for requirement discussions and issue resolution, all while maintaining stringent work ethics throughout project execution.</p>
+                                    <p>At Webtech Evolution, our work process adheres to stringent guidelines. This involves daily target achievements, consistent client updates, direct client engagement for requirement discussions and issue resolution, all while maintaining stringent work ethics throughout project execution.</p>
                                 </>
                             ),
                         }
@@ -2556,7 +2556,7 @@ export const EVS2Data = [
         evst2: "We tailor your needs as per your demands!",
         evsp1: (
             <>
-                <p className="pb-[3vh]">Got a fantastic idea? Let Espire Vox customize it for you. Our focus remains steadfast on ensuring a seamless and effortless journey for your users through your custom application.</p>
+                <p className="pb-[3vh]">Got a fantastic idea? Let Webtech Evolution customize it for you. Our focus remains steadfast on ensuring a seamless and effortless journey for your users through your custom application.</p>
                 <p className="pb-[3vh]">For Custom Application development, we prioritize the PHP framework due to its open-source nature, saving significant licensing costs. It seamlessly integrates with multiple web servers and pairs exceptionally well with the MySQL database, also an open-source platform.</p>
                 <p className="pb-[3vh]">Our developers naturally excel in writing efficient and clean code, resulting in affordability and time-saving measures for your projects.</p>
                 <p>We combine precise methodologies with skill and expertise to help you achieve your business objectives!</p>

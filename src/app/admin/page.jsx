@@ -1,4 +1,4 @@
-import GreetingRotator from '@/components/Admin96@Charlie/Common/Hello';
+import GreetingRotator from '@/components/Admin/Common/Hello';
 import Image from 'next/image';
 import React from 'react';
 

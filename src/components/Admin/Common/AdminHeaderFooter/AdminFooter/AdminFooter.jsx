@@ -69,7 +69,7 @@ export default function AdminFooter() {
           style={{ fontFamily: 'Roboto, sans-serif' }}
           className="font-[400] text-center py-10 tracking-widest text-sm sm:text-base px-4"
         >
-          © 2025 Espire Vox — All Rights Reserved.
+          © 2025 Webtech Evolution — All Rights Reserved.
         </h1>
       </motion.div>
     </div>

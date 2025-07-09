@@ -13,11 +13,11 @@ const bulletPointsData = [
   },
   {
     id: 2,
-    text: 'Espire Vox remains as a quickly growing IT organization, devoted to conveying worldwide electronic turn of events and programming arrangements. Including gifted programming experts with profound area mastery, the organization endeavors to impart its insight through inventive arrangements and committed administrations.',
+    text: 'Webtech Evolution remains as a quickly growing IT organization, devoted to conveying worldwide electronic turn of events and programming arrangements. Including gifted programming experts with profound area mastery, the organization endeavors to impart its insight through inventive arrangements and committed administrations.',
   },
   {
     id: 3,
-    text: 'Throughout recent years, Espire Vox has successfully created and sent off various sites for clients around the world. Ahmedabad is home to some of the top IT companies where EspireVox hires developers to drive technological innovation.',
+    text: 'Throughout recent years, Webtech Evolution has successfully created and sent off various sites for clients around the world. Ahmedabad is home to some of the top IT companies where EspireVox hires developers to drive technological innovation.',
   },
   { id: 4, text: 'Get a FREE Quotation 5 Days a Week!' },
 ];

@@ -31,7 +31,7 @@ export default function ClientWrapper({ children }) {
   return (
     <>
       <VerticalBackground observedHeight={height} />
-      <Toaster position="top-right" reverseOrder={false} />
+      {/* <Toaster position="top-right" reverseOrder={false} /> */}
 
       <main ref={contentRef} className="relative z-10 min-h-screen">
       <Header />

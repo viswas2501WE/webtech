@@ -227,7 +227,7 @@ function HeaderOptions() {
               pathname === '/about-us/About-Espire-Vox' ? 'text-[#1A96D5]' : 'hover:text-[#1A96D5]'
             }`}
           >
-            About Espire Vox
+            About Webtech
           </Link>
           <Link
             href="/about-us/our-team"
@@ -283,7 +283,7 @@ function HeaderOptions() {
                 : 'hover:text-[#1A96D5]'
             }`}
           >
-            Espire Vox Services
+            Webtech Services
           </Link>
 
           {[

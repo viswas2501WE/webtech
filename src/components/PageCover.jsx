@@ -16,15 +16,15 @@ export const labelMap = {
     '/admin/applicants': 'Career ',
     '/admin/applicants': 'Career ',
 
-    '/our-services/Web-Design-And-Development': 'Web Design And Development',
-    '/our-services/SEO-And-Digital-Marketing': 'SEO And Digital Marketing',
-    '/our-services/Hire-Dedicated-Developers': 'Hire Dedicated Developers',
-    '/our-services/Customized-Solutions': 'Customized Solutions',
+    '/our-services/espire-vox-services/Web-Design-And-Development': 'Web Design And Development',
+    '/our-services/espire-vox-services/SEO-And-Digital-Marketing': 'SEO And Digital Marketing',
+    '/our-services/espire-vox-services/Hire-Dedicated-Developers': 'Hire Dedicated Developers',
+    '/our-services/espire-vox-services/Customized-Solutions': 'Customized Solutions',
 
-    '/about-us/About-Espire-Vox': 'About Espire Vox',
+    '/about-us/About-Espire-Vox': 'About Webtech Evolution',
     '/about-us/our-team': 'Our Team',
 
-    '/our-services/espire-vox-services': 'Espire Vox Services',
+    '/our-services/espire-vox-services': 'Webtech Evolution Services',
     '/our-services/web-development': 'Web Development',
     
     '/our-services/Web-Development/WordPress-Development': 'WordPress Development',

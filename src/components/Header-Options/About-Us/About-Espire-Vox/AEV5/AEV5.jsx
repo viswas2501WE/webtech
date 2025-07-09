@@ -38,7 +38,7 @@ export default function AEV5() {
       <div className="flex flex-col lg:flex-row justify-center items-center px-4 sm:px-6 md:px-10 lg:px-46 text-center lg:text-left">
         <div className="w-full lg:w-[50%] mb-8 lg:mb-0 lg:pr-8">
           <h1 className="text-[#1A96D5] font-[500] text-lg sm:text-xl lg:text-xl" style={{ fontFamily: 'Roboto, sans-serif' }}>
-            ESPIRE VOX WAS ESTABLISHED BY
+            Webtech Evolution WAS ESTABLISHED BY
           </h1>
           <span className="text-[#1A96D5] font-[500] border-dashed border-t block w-1/3 sm:w-1/4 lg:w-[24%] mx-auto lg:mx-0 mt-2" />
           <h1 className="font-[600] text-4xl sm:text-5xl lg:text-[6vh] mt-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -47,7 +47,7 @@ export default function AEV5() {
         </div>
 
         <div className="w-full lg:w-[50%] font-[400] text-gray-700 text-base sm:text-lg leading-relaxed lg:text-base" style={{ fontFamily: 'Roboto, sans-serif' }}>
-          Their aptitude in both business and innovation pushes Espire Vox’s quest for greatness. Operating with a flat organizational structure and minimal hierarchy, the environment is fast-paced and success-oriented.
+          Their aptitude in both business and innovation pushes Webtech Evolution’s quest for greatness. Operating with a flat organizational structure and minimal hierarchy, the environment is fast-paced and success-oriented.
         </div>
       </div>
 

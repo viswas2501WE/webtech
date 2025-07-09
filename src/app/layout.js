@@ -6,6 +6,8 @@ import ClientWrapper from "@/components/ClientWrapper";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { labelMap } from "@/components/PageCover"
+import { Toaster } from 'react-hot-toast';
+
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600'], display: 'swap' });
 const roboto = Roboto({ subsets: ['latin'], weight: ['400'], display: 'swap' });
@@ -45,6 +47,7 @@ export default function RootLayout({ children }) {
         ) : (
           // For other routes, wrap children with ClientWrapper (which includes the main Header/Footer)
           <ClientWrapper>
+          <Toaster position="bottom-center" reverseOrder={false} />
             {children}
           </ClientWrapper>
         )}

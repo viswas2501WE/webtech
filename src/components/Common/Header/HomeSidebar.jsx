@@ -19,7 +19,7 @@ export default function HomeSidebar() {
           About Us
         </h1>
         <p className="font-[400] text-[#4F4F4F] py-1.5" style={{ fontFamily: 'Roboto, sans-serif' }}>
-          Espire Vox remains as a quickly growing IT organization, devoted to conveying worldwide electronic turn of
+          Webtech Evolution remains as a quickly growing IT organization, devoted to conveying worldwide electronic turn of
           events and programming arrangements. Including gifted programming experts with profound area mastery, the
           organization endeavors to bestow its insight through inventive arrangements and committed administrations.
         </p>

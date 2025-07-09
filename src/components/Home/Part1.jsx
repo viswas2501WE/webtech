@@ -43,7 +43,7 @@ const Part1 = () => {
                     className="font-[500] lg:font-[400] text-[#061526] pt-5 sm:pt-10 leading-6 sm:leading-7 text-sm sm:text-base"
                     style={{ fontFamily: "Roboto, sans-serif" }}
                 >
-                    Welcome to Espire Vox where development meets innovation to make a consistent computerized insight. As a main IT Company, we are devoted to giving state of the art arrangements that move organizations into what's in store. From concept to execution, we strive for excellence in every aspect of our work. We don't simply give arrangements; we convey encounters that change organizations. Join us on the path to a digitally empowered future!
+                    Welcome to Webtech Evolution where development meets innovation to make a consistent computerized insight. As a main IT Company, we are devoted to giving state of the art arrangements that move organizations into what's in store. From concept to execution, we strive for excellence in every aspect of our work. We don't simply give arrangements; we convey encounters that change organizations. Join us on the path to a digitally empowered future!
                 </div>
             </motion.div>
         </div>

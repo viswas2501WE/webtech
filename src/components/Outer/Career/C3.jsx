@@ -3,10 +3,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 const BASE_URL = process.env.NEXT_PUBLIC_IMG_url;
 
-const AnimatedSelect = ({ label, name, value, onChange, options, placeholder, required }) => {
+const AnimatedSelect = ({ label, name, value, onChange, options, placeholder = 'Select...', required }) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef();
 
@@ -16,8 +17,8 @@ const AnimatedSelect = ({ label, name, value, onChange, options, placeholder, re
         setIsOpen(false);
       }
     };
-    document.addEventListener("mousedown", closeDropdown);
-    return () => document.removeEventListener("mousedown", closeDropdown);
+    document.addEventListener('mousedown', closeDropdown);
+    return () => document.removeEventListener('mousedown', closeDropdown);
   }, []);
 
   const handleSelectChange = (optionValue) => {
@@ -25,7 +26,7 @@ const AnimatedSelect = ({ label, name, value, onChange, options, placeholder, re
     setIsOpen(false);
   };
 
-  const inputStyle = "mt-1 block w-full px-3 py-3 bg-white border-gray-300 rounded-md text-base sm:text-md focus:outline-none focus:border-transparent focus:ring-0";
+  const inputStyle = 'mt-1 block w-full px-3 py-3 bg-white border-gray-300 rounded-md text-base sm:text-md focus:outline-none focus:border-transparent focus:ring-0';
 
   return (
     <div className="relative" ref={ref}>
@@ -79,6 +80,8 @@ export default function C3() {
     message: '',
   });
 
+  const fileInputRef = useRef(null);
+
   const handleChange = (e) => {
     const { name, value, type, files } = e.target;
     setFormData((prev) => ({
@@ -92,7 +95,9 @@ export default function C3() {
 
     const formPayload = new FormData();
     Object.entries(formData).forEach(([key, value]) => {
-      formPayload.append(key, value);
+      if (value !== null && value !== undefined) {
+        formPayload.append(key, value);
+      }
     });
 
     try {
@@ -101,26 +106,46 @@ export default function C3() {
         formPayload,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       );
-      alert('Application submitted successfully!');
+
+      toast.success('Application submitted successfully!');
       console.log('Response:', res.data);
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        designation: '',
+        currentCtc: '',
+        expectedCtc: '',
+        totalExperience: '',
+        relevantExperience: '',
+        noticePeriod: '',
+        relocate: 'Relocate To Ahmedabad',
+        uploadCv: null,
+        message: '',
+      });
+
+      if (fileInputRef.current) {
+        fileInputRef.current.value = null;
+      }
+
     } catch (err) {
+      toast.error(err?.response?.data?.message || 'Submission failed!');
       console.error('Submission error:', err);
-      alert('Something went wrong!');
     }
   };
 
-  const inputStyle = "mt-1 block w-full px-3 py-3 bg-white border-gray-300 rounded-md text-base sm:text-md focus:outline-none focus:border-transparent focus:ring-0";
-
   const relocateOptions = [
-    { value: "Relocate To Ahmedabad", label: "Relocate To Ahmedabad" },
-    { value: "Yes", label: "Yes" },
-    { value: "No", label: "No" },
+    { value: 'Relocate To Ahmedabad', label: 'Relocate To Ahmedabad' },
+    { value: 'Yes', label: 'Yes' },
+    { value: 'No', label: 'No' },
   ];
 
   return (
-    <div id="apply-form" className="relative flex items-center justify-center px-4 sm:px-8 md:px-[0%] py-8 sm:py-4" style={{ fontFamily: "Roboto, sans-serif" }}>
+    <div id="apply-form" className="relative flex items-center justify-center px-4 sm:px-8 md:px-[0%] py-8 sm:py-4" style={{ fontFamily: 'Roboto, sans-serif' }}>
       <img src="/Local/gradient-liquid-abstract-background_23-2148911366.jpg" alt="" className="-scale-x-100 absolute object-cover w-full h-full opacity-100 -z-50" />
-      <span className="absolute block bg-blue-950 w-full h-full opacity-90 -z-40 "></span>
+      <span className="absolute block bg-blue-950 w-full h-full opacity-90 -z-40"></span>
 
       <div className="p-4 sm:p-8 w-full flex flex-col lg:flex-row max-w-7xl">
         <div className="lg:w-1/2 hidden lg:flex items-center justify-center mt-8 md:mt-0 px-4 sm:px-0">
@@ -134,9 +159,11 @@ export default function C3() {
         </div>
 
         <div className="lg:w-1/2 md:pr-8">
-          <h2 className="text-[5vh] sm:text-[6vh] md:text-[6.5vh] font-[600] mb-6 sm:mb-8 text-white leading-tight" style={{ fontFamily: "Poppins, sans-serif" }}>Let’s Get The Job</h2>
-          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+          <h2 className="text-[5vh] sm:text-[6vh] md:text-[6.5vh] font-[600] mb-6 sm:mb-8 text-white leading-tight" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            Let’s Get The Job
+          </h2>
 
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
               <InputField id="name" value={formData.name} onChange={handleChange} label="Name" required />
               <InputField id="email" value={formData.email} onChange={handleChange} label="Email" type="email" required />
@@ -165,6 +192,7 @@ export default function C3() {
                 value={formData.relocate}
                 onChange={handleChange}
                 options={relocateOptions}
+                placeholder="Choose an option"
                 required
               />
             </div>
@@ -179,6 +207,7 @@ export default function C3() {
                   type="file"
                   className="sr-only"
                   onChange={handleChange}
+                  ref={fileInputRef}
                   required
                 />
                 <div className="ml-2 text-sm text-gray-500 truncate min-w-0">
@@ -195,13 +224,13 @@ export default function C3() {
                 rows="3"
                 value={formData.message}
                 onChange={handleChange}
-                className={inputStyle}
+                className="mt-1 block w-full px-3 py-3 bg-white border-gray-300 rounded-md text-base sm:text-md focus:outline-none focus:border-transparent focus:ring-0"
                 placeholder="Message..."
               ></textarea>
             </div>
 
             <button
-              style={{ fontFamily: "Roboto, sans-serif" }}
+              style={{ fontFamily: 'Roboto, sans-serif' }}
               type="submit"
               className="relative font-[500] overflow-hidden text-white w-full sm:w-auto px-8 rounded-[2rem] group flex justify-center items-center bg-[#1A96D5] z-0 transition-all duration-300"
             >
@@ -218,7 +247,7 @@ export default function C3() {
 }
 
 const InputField = ({ id, label, type = 'text', value, onChange, required = false }) => {
-  const inputStyle = "mt-1 block w-full px-3 py-3 bg-white border-gray-300 rounded-md text-base sm:text-md focus:outline-none focus:border-transparent focus:ring-0";
+  const inputStyle = 'mt-1 block w-full px-3 py-3 bg-white border-gray-300 rounded-md text-base sm:text-md focus:outline-none focus:border-transparent focus:ring-0';
   return (
     <div>
       <label htmlFor={id} className="block text-sm font-[500] text-white whitespace-normal break-words">

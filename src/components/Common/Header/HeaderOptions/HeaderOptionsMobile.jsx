@@ -89,7 +89,7 @@ export default function HeaderOptionsMobile({ onClose }) {
           key:   'service',
           icon:  '/Local/service.png',
           dropdown: [
-            { label: 'Espire Vox Services', path: '/our-services/espire-vox-services' },
+            { label: 'Webtech Evolution Services', path: '/our-services/espire-vox-services' },
             { label: 'Web Development',        key: 'web' },
             { label: 'Mobile App Development', key: 'mobile' },
             { label: 'E‑Commerce Solutions',   key: 'ecom' },
@@ -109,7 +109,7 @@ export default function HeaderOptionsMobile({ onClose }) {
           key:   'about',
           icon:  '/Local/about.png',
           dropdown: [
-            { label: 'About Espire Vox', path: '/about-us/About-Espire-Vox' },
+            { label: 'About Webtech Evolution', path: '/about-us/About-Espire-Vox' },
             { label: 'Our Team',         path: '/about-us/our-team' },
           ],
         },
@@ -387,7 +387,7 @@ export default function HeaderOptionsMobile({ onClose }) {
 
       {/* --- footer --- */}
       <div className="text-center text-sm text-gray-500 mt-4">
-        © 2025 Espire Vox — All Rights Reserved.
+        © 2025 Webtech Evolution — All Rights Reserved.
       </div>
     </div>
   );

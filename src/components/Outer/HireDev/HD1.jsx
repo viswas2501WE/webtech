@@ -40,7 +40,7 @@ export default function HD1() {
             developers exhibit proficiency across a wide spectrum of programming languages and
             frameworks, showcasing their adaptability to diverse projects.
           </p>
-          <p className="pb-[4%]">Espire Vox, an IT management company, stands ready to meet your needs!</p>
+          <p className="pb-[4%]">Webtech Evolution, an IT management company, stands ready to meet your needs!</p>
           <p className="pb-[4%]">
             A key advantage of engaging Indian developers lies in their cost-effectiveness.
             Their services often come at notably lower rates compared to counterparts in other
@@ -56,7 +56,7 @@ export default function HD1() {
           </p>
           <p className="pb-[4%]">
             Whether you're a startup exploring new web or app horizons or an established brand
-            aiming for broader impact, Espire Vox eagerly awaits your innovative ideas. Our
+            aiming for broader impact, Webtech Evolution eagerly awaits your innovative ideas. Our
             success-oriented mindset and proven methodologies ensure the effective completion
             of your projects.
           </p>
