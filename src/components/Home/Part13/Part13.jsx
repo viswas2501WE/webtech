@@ -16,12 +16,12 @@ import {
 import Part13Common from './Part13Common';
 
 const socials = [
-  { icon: FaFacebookF, name: 'Facebook',  path: 'https://www.facebook.com/people/Espirevox/61555211339336/' },
-  { icon: FaInstagram, name: 'Instagram', path: 'https://www.instagram.com/espirevox'    },
-  { icon: FaWhatsapp,  name: 'WhatsApp',  path: 'https://api.whatsapp.com/send/?phone=%2B919601965456&amp;text&amp;type=phone_number&amp;app_absent=0'    },
-  { icon: FaBehance,   name: 'Behance',   path: 'https://www.behance.net/mithilchauhan'    },
-  { icon: FaLinkedinIn,name: 'LinkedIn',  path: 'https://www.linkedin.com/company/espirevox/'    },
-  { icon: FaDribbble,  name: 'Dribbble',  path: 'https://dribbble.com/Espirevox'    },
+  { icon: FaFacebookF, name: 'Facebook',  path: 'https://www.facebook.com/webtechevolution2014/' },
+  { icon: FaInstagram, name: 'Instagram', path: 'https://www.instagram.com/webtech_evolution_business'    },
+  { icon: FaWhatsapp,  name: 'WhatsApp',  path: 'https://api.whatsapp.com/send?phone=%2B919601965456'    },
+  // { icon: FaBehance,   name: 'Behance',   path: 'https://www.behance.net/mithilchauhan'    },
+  { icon: FaLinkedinIn,name: 'LinkedIn',  path: 'https://www.linkedin.com/company/webtechevolution'    },
+  // { icon: FaDribbble,  name: 'Dribbble',  path: 'https://dribbble.com/Espirevox'    },
 ];
 
 export default function Part13() {

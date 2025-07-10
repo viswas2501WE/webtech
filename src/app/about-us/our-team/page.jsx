@@ -1,4 +1,4 @@
-import AEV6 from "@/components/Header-Options/About-Us/About-Espire-Vox/AEV6/AEV6";
+import AEV6 from "@/components/Header-Options/About-Us/About-Webtech/AEV6/AEV6";
 import OT1 from "@/components/Header-Options/About-Us/Our-Team/OT1/OT1";
 import OT2 from "@/components/Header-Options/About-Us/Our-Team/OT2";
 import PageCover from "@/components/PageCover";

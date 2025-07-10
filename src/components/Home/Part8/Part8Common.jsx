@@ -49,7 +49,7 @@ export default function Part8Common({
 
         {/* READ MORE link */}
         <Link
-          href={`/our-services/espire-vox-services/${id}`}
+          href={`/our-services/Webtech-services/${id}`}
           className="flex items-baseline transition-colors fill-[#242D65]
                      hover:fill-[#0F285F] py-2 duration-300
                      text-[#0F285F] hover:text-[#242D65]"

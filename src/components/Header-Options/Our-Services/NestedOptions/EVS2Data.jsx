@@ -900,7 +900,7 @@ export const EVS2Data = [
     // 13
     {
         id: "PPC",
-        coverlink: `${BASE1}/ppc-banner.png`,
+        coverlink: `${BASE1}/top-view-woman-typing-laptop_23-2150062347.avif`,
         evst1: "Marketing",
         evst2: "PPC Advertising and Marketing",
         evsp1: (
@@ -1757,7 +1757,7 @@ export const EVS2Data = [
     // 22
     {
         id: "WordPress-Development",
-        coverlink: `${BASE1}/wordpress-developmentbanner-1.png`,
+        coverlink: `${BASE1}/banner-1-about-us.jpg`,
         evst1: "E-commerce Platform",
         evst2: "WordPress and Woo Commerce Development",
         evsp1: (

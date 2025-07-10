@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import EVS2Common from '@/components/Header-Options/Our-Services/EspireVoxServices/EVS2/EVS2Common';
+import EVS2Common from '@/components/Header-Options/Our-Services/WebtechServices/EVS2/EVS2Common';
 import { services } from '../../../../../../Constance'; // Import services to get the ID for nested links
 
 const EVS2 = ({ serviceIds = [], basePath = '/our-services' }) => { // Accept serviceIds and basePath

@@ -1,10 +1,10 @@
 import PageCover from "@/components/PageCover";
-import AEV1 from "@/components/Header-Options/About-Us/About-Espire-Vox/AEV1";
-import AEV2 from "@/components/Header-Options/About-Us/About-Espire-Vox/AEV2";
-import AEV4 from "@/components/Header-Options/About-Us/About-Espire-Vox/AEV4/AEV4";
+import AEV1 from "@/components/Header-Options/About-Us/About-Webtech/AEV1";
+import AEV2 from "@/components/Header-Options/About-Us/About-Webtech/AEV2";
+import AEV4 from "@/components/Header-Options/About-Us/About-Webtech/AEV4/AEV4";
 import Part3 from "@/components/Home/Part3";
-import AEV5 from "@/components/Header-Options/About-Us/About-Espire-Vox/AEV5/AEV5";
-import AEV6 from "@/components/Header-Options/About-Us/About-Espire-Vox/AEV6/AEV6";
+import AEV5 from "@/components/Header-Options/About-Us/About-Webtech/AEV5/AEV5";
+import AEV6 from "@/components/Header-Options/About-Us/About-Webtech/AEV6/AEV6";
 
 const AboutUs = () => {
     const BASE = process.env.NEXT_PUBLIC_IMG_url;

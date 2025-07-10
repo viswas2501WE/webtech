@@ -93,12 +93,18 @@ export default function C3() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const company = process.env.NEXT_PUBLIC_COMPANY || 'Webtech';
+    const pageUrl = window.location.href;
+
     const formPayload = new FormData();
     Object.entries(formData).forEach(([key, value]) => {
       if (value !== null && value !== undefined) {
         formPayload.append(key, value);
       }
     });
+
+    formPayload.append('company', company);
+    formPayload.append('pageUrl', pageUrl);
 
     try {
       const res = await axios.post(

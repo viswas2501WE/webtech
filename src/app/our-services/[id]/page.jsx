@@ -5,8 +5,8 @@ import { useEffect } from 'react';
 import { services } from '../../../../Constance'; // adjust path as needed
 
 import PageCover from '@/components/PageCover';
-import EVS1 from '@/components/Header-Options/Our-Services/EspireVoxServices/EVS1';
-import EVS2 from '@/components/Header-Options/Our-Services/EspireVoxServices/EVS2/EVS2';
+import EVS1 from '@/components/Header-Options/Our-Services/WebtechServices/EVS1';
+import EVS2 from '@/components/Header-Options/Our-Services/WebtechServices/EVS2/EVS2';
 
 const BASE3 = process.env.NEXT_PUBLIC_IMG_url;
 const BASE1 = process.env.NEXT_PUBLIC_IMG_url1;
@@ -17,7 +17,7 @@ const BASE = BASE1 || BASE2 || BASE3
 // Ensure these IDs exactly match the 'id' in Constance.jsx for your sub-services
 const pagesData = [
   {
-    id: 'espire-vox-services',
+    id: 'Webtech-services',
     banner: `${BASE}/banner-2-our-services.jpg`,
     title1: 'Empowering Innovation, Driving Digital Excellence.',
     title2: 'Our Diverse Services Catering to all Businesses!',

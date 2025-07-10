@@ -89,7 +89,7 @@ export default function HeaderOptionsMobile({ onClose }) {
           key:   'service',
           icon:  '/Local/service.png',
           dropdown: [
-            { label: 'Webtech Evolution Services', path: '/our-services/espire-vox-services' },
+            { label: 'Webtech Evolution Services', path: '/our-services/Webtech-services' },
             { label: 'Web Development',        key: 'web' },
             { label: 'Mobile App Development', key: 'mobile' },
             { label: 'E‑Commerce Solutions',   key: 'ecom' },
@@ -109,7 +109,7 @@ export default function HeaderOptionsMobile({ onClose }) {
           key:   'about',
           icon:  '/Local/about.png',
           dropdown: [
-            { label: 'About Webtech Evolution', path: '/about-us/About-Espire-Vox' },
+            { label: 'About Webtech Evolution', path: '/about-us/About-Webtech' },
             { label: 'Our Team',         path: '/about-us/our-team' },
           ],
         },
@@ -119,11 +119,11 @@ export default function HeaderOptionsMobile({ onClose }) {
   ];
 
   const socials = [
-    { name: 'Instagram', url: 'https://www.instagram.com/',  icon: '/Local/insta.png' },
-    { name: 'Facebook',  url: 'https://www.facebook.com/',   icon: '/Local/fb.png' },
-    { name: 'LinkedIn',  url: 'https://www.linkedin.com/',   icon: '/Local/in.png' },
-    { name: 'Dribbble',  url: 'https://dribbble.com/',       icon: '/Local/dribble.png' },
-    { name: 'Behance',   url: 'https://www.behance.net/',    icon: '/Local/be.png' },
+    { name: 'Instagram', url: 'https://www.instagram.com/webtech_evolution_business',  icon: '/Local/insta.png' },
+    { name: 'Facebook',  url: 'https://www.facebook.com/webtechevolution2014/',   icon: '/Local/fb.png' },
+    { name: 'LinkedIn',  url: 'https://www.linkedin.com/company/webtechevolution',   icon: '/Local/in.png' },
+    // { name: 'Dribbble',  url: 'https://dribbble.com/',       icon: '/Local/dribble.png' },
+    // { name: 'Behance',   url: 'https://www.behance.net/',    icon: '/Local/be.png' },
   ];
 
   const childActive = (items) =>
@@ -152,7 +152,7 @@ export default function HeaderOptionsMobile({ onClose }) {
       <div className="flex justify-between items-center mb-4">
         <div className="m-[1.5vw]">
           <img
-            src={`${process.env.NEXT_PUBLIC_IMG_url1}/espire-vox-logo.png`}
+            src={`${process.env.NEXT_PUBLIC_IMG_url1}/webtech.png`}
             alt="Espire Vox Logo"
             width={140}
             height={40}
@@ -387,7 +387,7 @@ export default function HeaderOptionsMobile({ onClose }) {
 
       {/* --- footer --- */}
       <div className="text-center text-sm text-gray-500 mt-4">
-        © 2025 Webtech Evolution — All Rights Reserved.
+        © {new Date().getFullYear()} Webtech Evolution — All Rights Reserved.
       </div>
     </div>
   );

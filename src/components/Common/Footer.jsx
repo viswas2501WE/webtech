@@ -50,7 +50,7 @@ export default function Footer() {
               { label: 'Our Team',          href: '/our-team' },
               { label: 'Our Portfolio',     href: '/our-portfolio' },
               { label: 'Career',            href: '/career' },
-              { label: 'Blog',              href: '/blog' },
+              // { label: 'Blog',              href: '/blog' },
               { label: 'Contact Us',        href: '/contact-us' },
             ].map((l) => (
               <Link
@@ -71,7 +71,7 @@ export default function Footer() {
           style={{ fontFamily: 'Roboto, sans-serif' }}
           className="font-[400] text-center py-10 tracking-widest text-sm sm:text-base px-4"
         >
-          © 2025 Webtech Evolution — All Rights Reserved.
+          © {new Date().getFullYear()} Webtech Evolution — All Rights Reserved.
         </h1>
       </motion.div>
     </div>

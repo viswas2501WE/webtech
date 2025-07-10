@@ -31,7 +31,7 @@ export default function Part3() {
           <div className="flex flex-wrap justify-center lg:px-[10vh] relative items-stretch">
             {/* Card 1 */}
             <ServiceCard
-              href="/our-services/espire-vox-services/Web-Design-And-Development"
+              href="/our-services/Webtech-services/Web-Design-And-Development"
               img={`${base}/Web-Design-Development1-1.png`}
               title="Web Design And Development"
               text="Starting around 2014, we have been a visionary and a dependable programming improvement organization serving clients across the globe and container India. We design and develop as per your need!"
@@ -39,7 +39,7 @@ export default function Part3() {
 
             {/* Card 2 */}
             <ServiceCard
-              href="/our-services/espire-vox-services/SEO-And-Digital-Marketing"
+              href="/our-services/Webtech-services/SEO-And-Digital-Marketing"
               img={`${base}/SEO-Digital-Marketing1-1.png`}
               title="SEO And Digital Marketing"
               text="Our group contains experienced Search engine optimization and computerized advertisers that will elevate your company's web-online arrive at in a limited capacity to understand time."
@@ -47,7 +47,7 @@ export default function Part3() {
 
             {/* Card 3 */}
             <ServiceCard
-              href="/our-services/espire-vox-services/Hire-Dedicated-Developers"
+              href="/our-services/Webtech-services/Hire-Dedicated-Developers"
               img={`${base}/Hire-Dedicated-Developers1-1.png`}
               title="Hire Dedicated Developers"
               text="Searching for devoted designers to chip away on your venture, we have you arranged. You can move toward us with your necessities and we will offer you our best!"
@@ -55,7 +55,7 @@ export default function Part3() {
 
             {/* Card 4 */}
             <ServiceCard
-              href="/our-services/espire-vox-services/Customized-Solutions"
+              href="/our-services/Webtech-services/Customized-Solutions"
               img={`${base}/Customized-Solutions1-1.png`}
               title="Customized Solutions"
               text="We can chip away on complex prerequisites and convey past assumptions. With years of experience in the industry, we have worked on all kinds of projects."

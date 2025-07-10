@@ -1,4 +1,4 @@
-import AEV_1 from "@/components/Header-Options/About-Us/About-Espire-Vox/AEV4/AEV_4.1";
+import AEV_1 from "@/components/Header-Options/About-Us/About-Webtech/AEV4/AEV_4.1";
 
 export default function AEV4() {
   /** In Vite you used import.meta.env.VITE_IMG_url.

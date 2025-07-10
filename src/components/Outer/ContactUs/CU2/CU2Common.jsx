@@ -7,7 +7,7 @@ export default function CU2Common() {
   const company = {
     cityName: 'Ahmedabad',
     phone: '+91 96019 65456',
-    email: 'info@espirevox.com',
+    email: 'info@webtech-evolution.com',
     address:
       '4th Floor, Sadbhav Drive-in Exit Road, Thaltej, Ahmedabad-380 054 Gujarat, India',
   };

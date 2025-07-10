@@ -50,7 +50,7 @@ export default function MobileHeader() {
   };
 
   /* ------------- logo URL via env var ------------- */
-  const logoSrc = `${process.env.NEXT_PUBLIC_IMG_url1}/espire-vox-logo.png`;
+  const logoSrc = `${process.env.NEXT_PUBLIC_IMG_url1}/webtech.png`;
 
   return (
     <div className="fixed top-0 xl:hidden w-full z-[999]">

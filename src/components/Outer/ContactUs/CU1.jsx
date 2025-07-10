@@ -6,6 +6,7 @@ import axios from 'axios'; // Import axios
 import toast from 'react-hot-toast';
 
 const BASE = process.env.NEXT_PUBLIC_IMG_url;
+const company = process.env.NEXT_PUBLIC_COMPANY || 'Webtech';
 
 function CU1() {
   const [formData, setFormData] = useState({
@@ -35,6 +36,7 @@ function CU1() {
     const dataToSend = {
       ...formData,
       pageUrl: currentPageUrl,
+      company,
     };
 
     console.log('Form data to send:', dataToSend);

@@ -49,7 +49,7 @@ export default function NotFound() {
         >
           {/* left pink bar */}
           <div
-            className="absolute bg-[#FF98A6] rounded-full transition-all duration-300 origin-right"
+            className="absolute bg-[#7dcdff] rounded-full transition-all duration-300 origin-right"
             style={{
               width: side,
               height: d,
@@ -59,7 +59,7 @@ export default function NotFound() {
           />
           {/* right pink bar */}
           <div
-            className="absolute bg-[#FF98A6] rounded-full transition-all duration-300 origin-left"
+            className="absolute bg-[#7dcdff] rounded-full transition-all duration-300 origin-left"
             style={{
               width: side,
               height: d,

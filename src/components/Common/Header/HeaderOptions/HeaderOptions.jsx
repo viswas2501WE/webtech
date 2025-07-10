@@ -30,11 +30,11 @@ function HeaderOptions() {
     paths.some((p) => pathname.startsWith(p));
 
   /* ---------- path arrays (unchanged) ---------- */
-  const aboutUsPaths = ['/about-us', '/about-espire-vox', '/about-us/our-team'];
+  const aboutUsPaths = ['/about-us', '/About-Webtech', '/about-us/our-team'];
 
   const servicePaths = [
     '/service',
-    '/our-services/espire-vox-services',
+    '/our-services/Webtech-services',
     '/our-services/web-development',
     '/our-services/mobile-app-development',
     '/our-services/e-commerce-solutions',
@@ -222,9 +222,9 @@ function HeaderOptions() {
           style={{ fontFamily: 'Roboto, sans-serif' }}
         >
           <Link
-            href="/about-us/About-Espire-Vox"
+            href="/about-us/About-Webtech"
             className={`block py-2 ${
-              pathname === '/about-us/About-Espire-Vox' ? 'text-[#1A96D5]' : 'hover:text-[#1A96D5]'
+              pathname === '/about-us/About-Webtech' ? 'text-[#1A96D5]' : 'hover:text-[#1A96D5]'
             }`}
           >
             About Webtech
@@ -276,9 +276,9 @@ function HeaderOptions() {
           style={{ fontFamily: 'Roboto, sans-serif' }}
         >
           <Link
-            href="/our-services/espire-vox-services"
+            href="/our-services/Webtech-services"
             className={`block py-2 px-5 ${
-              pathname.startsWith('/our-services/espire-vox-services')
+              pathname.startsWith('/our-services/Webtech-services')
                 ? 'text-[#1A96D5]'
                 : 'hover:text-[#1A96D5]'
             }`}

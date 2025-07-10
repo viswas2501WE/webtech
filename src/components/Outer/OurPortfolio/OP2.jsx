@@ -18,6 +18,7 @@ const OP2 = () => {
 
   const imgUrl = process.env.NEXT_PUBLIC_IMG_url;
   const imgUrl3 = process.env.NEXT_PUBLIC_IMG_url3;
+  const company = process.env.NEXT_PUBLIC_COMPANY || 'Webtech';
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,6 +35,7 @@ const OP2 = () => {
     const dataToSend = {
       ...formData,
       pageUrl: currentPageUrl,
+      company,
     };
 
     try {

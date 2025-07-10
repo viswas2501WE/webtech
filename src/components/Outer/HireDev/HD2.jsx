@@ -96,11 +96,14 @@ const HD2 = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        const company = process.env.NEXT_PUBLIC_COMPANY || 'Webtech';
+
         const data = new FormData();
         Object.entries(formData).forEach(([key, value]) => {
             if (value) data.append(key, value);
         });
         data.append("pageUrl", window.location.origin + pathname);
+        data.append("company", company); 
 
         try {
             toast.loading("Submitting...", { id: 'submit' });

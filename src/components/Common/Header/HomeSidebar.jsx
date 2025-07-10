@@ -47,25 +47,25 @@ export default function HomeSidebar() {
         <div className="flex justify-start pt-4.5 items-center" style={{ fontFamily: 'Roboto, sans-serif' }}>
           <FaEnvelope className="text-[#1A96D5] text-md" />
           <a href="mailto:hello@espirevox.com" className="pl-2 font-[400] text-md text-[#4F4F4F]">
-            hello@espirevox.com
+            info@webtech-evolution.com
           </a>
         </div>
       </div>
 
       <div className="flex py-12 text-md w-30 justify-between">
-        <a href="https://www.facebook.com/people/Espirevox/61555211339336/" target='_blank' aria-label="Facebook">
+        <a href="https://www.facebook.com/webtechevolution2014/" target='_blank' aria-label="Facebook">
           <FaFacebookF className="cursor-pointer hover:text-[#1A96D5] hover:-translate-y-1 transition-transform duration-400" />
         </a>
-        <a href="https://www.behance.net/mithilchauhan" target='_blank' aria-label="Behance">
+        {/* <a href="https://www.behance.net/mithilchauhan" target='_blank' aria-label="Behance">
           <FaBehance className="cursor-pointer hover:text-[#1A96D5] hover:-translate-y-1 transition-transform duration-400" />
-        </a>
-        <a href="https://www.linkedin.com/company/espirevox/" target='_blank' aria-label="LinkedIn">
+        </a> */}
+        <a href="https://www.linkedin.com/company/webtechevolution" target='_blank' aria-label="LinkedIn">
           <FaLinkedinIn className="cursor-pointer hover:text-[#1A96D5] hover:-translate-y-1 transition-transform duration-400" />
         </a>
-        <a href="https://dribbble.com/Espirevox" target='_blank' aria-label="Dribbble">
+        {/* <a href="https://dribbble.com/Espirevox" target='_blank' aria-label="Dribbble">
           <FaDribbble className="cursor-pointer hover:text-[#1A96D5] hover:-translate-y-1 transition-transform duration-400" />
-        </a>
-        <a href="https://www.instagram.com/espirevox" target='_blank' aria-label="Instagram">
+        </a> */}
+        <a href="https://www.instagram.com/webtech_evolution_business" target='_blank' aria-label="Instagram">
           <FaInstagram className="cursor-pointer hover:text-[#1A96D5] hover:-translate-y-1 transition-transform duration-400" />
         </a>
       </div>

@@ -1,4 +1,4 @@
-import TeamCard from '@/components/Header-Options/About-Us/About-Espire-Vox/AEV5/TeamCard';   // ← adjust if your path differs
+import TeamCard from '@/components/Header-Options/About-Us/About-Webtech/AEV5/TeamCard';   // ← adjust if your path differs
 
 export default function AEV5() {
   /* Replace Vite env vars with Next equivalents */

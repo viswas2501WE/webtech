@@ -32,7 +32,7 @@ const Part5Common = ({ icon, title, description }) => {
 
             {/* Title */}
             <h3
-                className="text-xl sm:text-2xl text-gray-900 mb-2 font-[600] hover:text-[#1A96D5] transition-all duration-200 ease-in flex-shrink-0"
+                className="text-xl sm:text-2xl text-gray-900 mb-2 font-[600] hover:text-[#f85c70] transition-all duration-200 ease-in flex-shrink-0"
                 style={{ fontFamily: "Poppins, sans-serif" }}
             >
                 {title}

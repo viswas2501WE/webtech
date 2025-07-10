@@ -2,8 +2,8 @@
 
 import { services } from "../../../Constance";
 import PageCover from "@/components/PageCover";
-import EVS1 from "@/components/Header-Options/Our-Services/EspireVoxServices/EVS1";
-import EVS2 from "@/components/Header-Options/Our-Services/EspireVoxServices/EVS2/EVS2";
+import EVS1 from "@/components/Header-Options/Our-Services/WebtechServices/EVS1";
+import EVS2 from "@/components/Header-Options/Our-Services/WebtechServices/EVS2/EVS2";
 
 const OurServices = () => {
     const BASE = process.env.NEXT_PUBLIC_IMG_url;
@@ -44,7 +44,7 @@ const OurServices = () => {
       services[31]?.id, // Customized Solutions
     ].filter(Boolean)
     const mainServiceCategoryIds = [
-        "espire-vox-services", // This needs to be an actual ID from Constance.jsx if you want it displayed
+        "Webtech-services", // This needs to be an actual ID from Constance.jsx if you want it displayed
         "web-development",
         "mobile-app-development",
         "e-commerce-solutions",
