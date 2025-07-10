@@ -3,11 +3,6 @@
 import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 
-/**
- * Scrolls the window to the top whenever:
- *  • the pathname changes (new route)
- *  • or the query string changes (same page, different ?search=value)
- */
 export default function ScrollToTop() {
   const pathname      = usePathname();
   const searchParams  = useSearchParams();   // returns a ReadonlyURLSearchParams

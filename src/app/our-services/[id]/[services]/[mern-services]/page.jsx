@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams, useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import {  useEffect, useState } from 'react';
 import { services } from '../../../../../../Constance'; // Correct path
 
 // IMPORTS FROM PAGE3.JSX FOR STYLING AND STRUCTURE
@@ -59,7 +59,9 @@ const MernstackPage = () => {
   }
 
   return (
+    
     <div className="text-black">
+      {/* <Suspense> */}
       {/* Page Cover Section - Styled exactly as page3.jsx, using 'item' */}
       <PageCover bgImage={item.coverlink} />
 
@@ -103,6 +105,7 @@ const MernstackPage = () => {
       </div>
 
       <Part13 />
+    {/* </Suspense> */}
     </div>
   );
 };

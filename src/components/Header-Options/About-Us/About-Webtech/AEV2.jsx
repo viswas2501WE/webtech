@@ -1,6 +1,6 @@
 'use client'; // Required because of Framer Motion and useRef
 
-import { useRef } from 'react';
+import { Suspense, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Link from 'next/link'; // ✅ replaces NavLink
 import Part6Common from '@/components/Home/Part6/Part6Common'; // ✅ Adjust if your path differs
@@ -80,7 +80,10 @@ const AEV2 = () => {
             }}
             className="md:mt-8"
           >
+            <Suspense>
+
             <Part6Common title="Projects" count={400} />
+            </Suspense>
           </motion.div>
 
           {/* Happy Clients */}
@@ -94,7 +97,10 @@ const AEV2 = () => {
             }}
             className="md:mb-8"
           >
+            <Suspense>
+
             <Part6Common title="Happy Clients" count={150} />
+            </Suspense>
           </motion.div>
 
           {/* Team Members */}
@@ -107,8 +113,10 @@ const AEV2 = () => {
               transitionDelay: '0.9s',
             }}
             className="md:mt-8"
-          >
+          ><Suspense>
+
             <Part6Common title="Team Members" count={35} />
+          </Suspense>
           </motion.div>
 
           {/* Experience */}
@@ -121,8 +129,10 @@ const AEV2 = () => {
               transitionDelay: '1.2s',
             }}
             className="md:mb-8"
-          >
+          ><Suspense>
+            
             <Part6Common title="Experience" count={10} />
+          </Suspense>
           </motion.div>
         </div>
       </div>

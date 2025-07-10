@@ -1,3 +1,4 @@
+'use client'
 export default function Screen2() {
   const base = process.env.NEXT_PUBLIC_IMG_url;
 

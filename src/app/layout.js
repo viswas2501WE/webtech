@@ -4,7 +4,8 @@ import "./globals.css";
 import { Poppins, Roboto } from 'next/font/google';
 import ClientWrapper from "@/components/ClientWrapper";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
+// import { Suspense } from 'react';
 import { labelMap } from "@/components/PageCover"
 import { Toaster } from 'react-hot-toast';
 
@@ -41,16 +42,21 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} ${roboto.className} antialiased overflow-x-hidden`}
       >
+{/* 
+
         {isAdminRoute ? (
           // If it's an admin route, render only children directly, allowing admin/layout.jsx to handle its own header/footer
           children
-        ) : (
-          // For other routes, wrap children with ClientWrapper (which includes the main Header/Footer)
-          <ClientWrapper>
-          <Toaster position="bottom-center" reverseOrder={false} />
-            {children}
-          </ClientWrapper>
-        )}
+        ) : ( */}
+          {/* // For other routes, wrap children with ClientWrapper (which includes the main Header/Footer) */}
+           <Suspense>
+            <ClientWrapper>
+              <Toaster position="bottom-center" reverseOrder={false} />
+              {children}
+            </ClientWrapper>
+          </ Suspense>
+        {/* )} */}
+
       </body>
     </html>
   );

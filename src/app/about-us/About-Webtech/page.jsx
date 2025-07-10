@@ -1,9 +1,14 @@
+export const dynamic = 'force-dynamic';
+import { Suspense } from "react";
 import AboutUs from "../page";
+// import Loader from "@/components/Loader";
 
 const AboutEspireVox = () => {
     return (
         <div>
-            <AboutUs/>
+            <Suspense>
+                <AboutUs />
+            </Suspense>
         </div>
     )
 }

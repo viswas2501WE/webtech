@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { HomeIcon } from 'lucide-react';
 import Image from 'next/image';      // for optimisation (optional)
 
-export default function NotFound() {
+export default function NotFoundClient() {
   /* ---------------- state for the animated button ---------------- */
   const [isHovered, setIsHovered]       = useState(false);
   const [shrinkToCircle, setShrink]     = useState(false);

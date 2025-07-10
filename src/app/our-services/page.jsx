@@ -1,9 +1,10 @@
-'use client'
+export const dynamic = 'force-dynamic';
 
 import { services } from "../../../Constance";
 import PageCover from "@/components/PageCover";
 import EVS1 from "@/components/Header-Options/Our-Services/WebtechServices/EVS1";
 import EVS2 from "@/components/Header-Options/Our-Services/WebtechServices/EVS2/EVS2";
+import { Suspense } from "react";
 
 const OurServices = () => {
     const BASE = process.env.NEXT_PUBLIC_IMG_url;
@@ -54,6 +55,8 @@ const OurServices = () => {
 
     return (
         <div className="text-black">
+            <Suspense>
+
             <PageCover bgImage={`${BASE}/banner-2-our-services.jpg`} />
             <EVS1
                 EVS1Title1="Empowering Innovation, Driving Digital Excellence."
@@ -63,6 +66,7 @@ const OurServices = () => {
             />
             {/* For the top-level page, the basePath for EVS2 items is directly /our-services */}
             <EVS2 serviceIds={serviceIds} basePath="/our-services" />
+                </Suspense>
         </div>
     );
 };

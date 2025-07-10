@@ -1,3 +1,4 @@
+'use client'
 export default function Screen3() {
   const base = process.env.NEXT_PUBLIC_IMG_url; // 2024/02 folder
 

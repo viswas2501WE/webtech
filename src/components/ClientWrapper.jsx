@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { Suspense, useEffect, useRef, useState } from 'react';
 import VerticalBackground from '@/components/Common/Bg'; 
 import Header from '@/components/Common/Header/Header';   
 import Footer from '@/components/Common/Footer';          
@@ -34,9 +34,12 @@ export default function ClientWrapper({ children }) {
       {/* <Toaster position="top-right" reverseOrder={false} /> */}
 
       <main ref={contentRef} className="relative z-10 min-h-screen">
+        <Suspense>
+
       <Header />
         {children}
       <Footer />
+        </Suspense>
       </main>
       <ScrollToTop/>
 

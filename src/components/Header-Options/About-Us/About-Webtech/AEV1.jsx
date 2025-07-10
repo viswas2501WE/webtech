@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { Suspense, useRef } from 'react';
 import Link from 'next/link';
 import Screen1 from '@/components/Common/Animations/Scree1';
 import CommonButton from '@/components/Common/CommonButton';
@@ -30,7 +30,10 @@ export default function AboutUsPage() {
 
   return (
     <div className="relative overflow-hidden">
+      <Suspense>
+
       <Screen1 />
+      </Suspense>
 
       <div className="flex flex-col lg:flex-row px-4 md:px-8 lg:px-[13vw] justify-between py-8 md:py-12 lg:py-[7vw] gap-8 lg:gap-0"
            style={{ fontFamily: 'Roboto, sans-serif' }}>
@@ -60,7 +63,10 @@ export default function AboutUsPage() {
           <div className="pt-8 md:pt-[1.5vw]">
             <Link href="/contact-us" passHref>
               {/* CommonButton already renders a <button>.  */}
+              <Suspense>
+
               <CommonButton>CONTACT&nbsp;US</CommonButton>
+              </Suspense>
             </Link>
           </div>
         </div>

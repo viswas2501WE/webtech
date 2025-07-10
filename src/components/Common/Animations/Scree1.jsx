@@ -1,5 +1,5 @@
 // No hooks → can stay a Server Component. If you plan to add runtime JS, add "use client".
-
+'use client'
 export default function Screen1() {
   /* Base WordPress path coming from .env.local */
   const base = process.env.NEXT_PUBLIC_IMG_url;     // 2024/02 folder

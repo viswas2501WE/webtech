@@ -1,3 +1,4 @@
+"use client"
 import CommonButton from '@/components/Common/CommonButton';
 import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react';

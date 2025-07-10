@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams, useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import {  useEffect } from 'react';
 import { services } from '../../../../Constance'; // adjust path as needed
 
 import PageCover from '@/components/PageCover';
@@ -161,7 +161,9 @@ const ServicePage = () => {
   if (!pageData) return null;
 
   return (
+    
     <div className="text-black">
+      {/* <Suspense> */}
       <PageCover bgImage={pageData.banner} />
       <EVS1
         EVS1Title1={pageData.title1}
@@ -169,12 +171,13 @@ const ServicePage = () => {
         EVS1Para1={pageData.description1}
         EVS1Para2={pageData.description2}
         EVS1Img={`${BASE}/${pageData.image}`}
-      />
+        />
       {/* For the first nested page, the basePath for EVS2 items includes the current ID */}
       <EVS2
         serviceIds={pageData.serviceIds} // Pass the array of service IDs directly
         basePath={`/our-services/${id}`} // Construct the basePath for nested links
-      />
+        />
+        {/* </Suspense> */}
     </div>
   );
 };

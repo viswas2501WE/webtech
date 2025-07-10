@@ -47,8 +47,10 @@ export default function EVS2Inner() {
   }
   // THIS IS THE CRUCIAL PART FOR THE TEST:
   return (
-
+    
+    
     <div className="text-black">
+      {/* <Suspense> */}
       <PageCover bgImage={item.coverlink} />
       <div className="flex-col flex xl:flex-row pt-[10vh]">
         <Circle img1={item?.img11} img2={item.img12} img3={item.img13} img4={item.img14} />
@@ -95,6 +97,7 @@ export default function EVS2Inner() {
 
       {/* part 4 */}
       <Part13 />
+      {/* </Suspense> */}
     </div>
   );
 }
