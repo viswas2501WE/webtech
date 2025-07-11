@@ -13,8 +13,8 @@ export const labelMap = {
     '/blog': 'Blog',
     '/contact-us': 'Contact Us',
     
-    '/admin/applicants': 'Career ',
-    '/admin/applicants': 'Career ',
+    '/admin@2096/applicants': 'Career ',
+    '/admin@2096/applicants': 'Career ',
 
     '/our-services/Webtech-services/Web-Design-And-Development': 'Web Design And Development',
     '/our-services/Webtech-services/SEO-And-Digital-Marketing': 'SEO And Digital Marketing',

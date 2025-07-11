@@ -44,12 +44,12 @@ export default function AdminFooter() {
             style={{ fontFamily: 'Roboto, sans-serif' }}
           >
             {[
-              { label: 'Dashboard', href: '/admin/dashboard' },
-              { label: 'Developer Requests', href: '/admin/dev-requests' },
-              { label: 'Applicants', href: '/admin/applicants' },
-              { label: 'User Queries', href: '/admin/user-queries' },
-              { label: 'SEO', href: '/admin/seo-meta' },
-              { label: 'Our Team Section', href: '/admin/our-team-section' },
+              { label: 'Dashboard', href: '/admin@2096/dashboard' },
+              { label: 'Developer Requests', href: '/admin@2096/dev-requests' },
+              { label: 'Applicants', href: '/admin@2096/applicants' },
+              { label: 'User Queries', href: '/admin@2096/user-queries' },
+              { label: 'SEO', href: '/admin@2096/seo-meta' },
+              { label: 'Our Team Section', href: '/admin@2096/our-team-section' },
             ].map((l) => (
               <Link
                 key={l.label}

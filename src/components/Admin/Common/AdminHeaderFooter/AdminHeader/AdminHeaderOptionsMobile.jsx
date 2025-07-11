@@ -8,12 +8,12 @@ export default function AdminHeaderOptionsMobile({ onClose }) {
   const pathname = usePathname();
 
   const adminNavLinks = [
-    { label: 'Dashboard', path: '/admin/dashboard' },
-    { label: 'Hire Developers', path: '/admin/dev-requests' },
-    { label: 'Career', path: '/admin/applicants' },
-    { label: 'Contact Us', path: '/admin/user-queries' },
-    { label: 'SEO', path: '/admin/seo-meta' },
-    { label: 'Our Team', path: '/admin/our-team-section' },
+    { label: 'Dashboard', path: '/admin@2096/dashboard' },
+    { label: 'Hire Developers', path: '/admin@2096/dev-requests' },
+    { label: 'Career', path: '/admin@2096/applicants' },
+    { label: 'Contact Us', path: '/admin@2096/user-queries' },
+    { label: 'SEO', path: '/admin@2096/seo-meta' },
+    { label: 'Our Team', path: '/admin@2096/our-team-section' },
   ];
 
   useEffect(() => {

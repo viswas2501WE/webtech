@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronRightIcon } from '@heroicons/react/24/solid';
+import { useLoader } from '@/components/RouteLoader';
 
 export default function HeaderOptionsMobile({ onClose }) {
   /* ------------------------------------------------------------------ */
@@ -15,6 +16,13 @@ export default function HeaderOptionsMobile({ onClose }) {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSubMenu, setOpenSubMenu]   = useState(null);
   const [openMern, setOpenMern]         = useState(false);
+  const { showLoader, hideLoader } = useLoader();
+  
+    const handleLoader = () => {
+      showLoader();            // show immediately
+      router.push('/about');   // trigger route
+      hideLoader();            // hide after navigation completes (optional)
+    };
 
   /* reset menus on route change */
   useEffect(() => {
@@ -175,7 +183,8 @@ export default function HeaderOptionsMobile({ onClose }) {
       <Link
         key={item.label}
         href={item.path}
-        onClick={onClose}
+        
+        onClick={onClose && handleLoader}
         className={`
           ${grp.group === 'top' 
             ? 'flex flex-col items-center w-[30%] py-3 text-center' 
@@ -297,7 +306,7 @@ export default function HeaderOptionsMobile({ onClose }) {
             onClick={(e) => {
               if (hasSubItems && isMernstack) e.preventDefault();
               else onClose();
-            }}
+            } }
             className="flex-grow"
           >
             {inner.label}
@@ -322,7 +331,7 @@ export default function HeaderOptionsMobile({ onClose }) {
               <Link
                 key={subInner.label}
                 href={subInner.path}
-                onClick={onClose}
+                onClick={onClose && handleLoader}
                 className={`block py-2 px-8 text-sm ${
                   pathname.startsWith(subInner.path)
                     ? 'text-[#1A96D5]'

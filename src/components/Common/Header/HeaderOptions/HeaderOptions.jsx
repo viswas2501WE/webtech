@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useLoader } from '@/components/RouteLoader';
 
 function HeaderOptions() {
   const pathname = usePathname();
@@ -11,6 +12,13 @@ function HeaderOptions() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSubMenu, setOpenSubMenu] = useState(null);
   const [scrolledHalfway, setScrolledHalfway] = useState(false);
+  const { showLoader, hideLoader } = useLoader();
+
+  const handleLoader = () => {
+    showLoader();            // show immediately
+    router.push('/');   // trigger route
+    hideLoader();            // hide after navigation completes (optional)
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -102,6 +110,7 @@ function HeaderOptions() {
         <div key={label} className="relative group">
           <Link
             href={path}
+            onClick={handleLoader}
             className={`block py-2 px-5 whitespace-nowrap ${
               active ? 'text-[#1A96D5]' : 'hover:text-[#1A96D5]'
             }`}
@@ -123,6 +132,7 @@ function HeaderOptions() {
               {subItem.map(({ label: innerLabel, path: innerPath }) => (
                 <Link
                   key={innerLabel}
+                  onClick={handleLoader}
                   href={innerPath}
                   className={`block py-2 px-4 ${
                     pathname.startsWith(innerPath)
@@ -192,7 +202,7 @@ function HeaderOptions() {
       style={{ fontFamily: 'Roboto, sans-serif', width: '91%' }}
     >
       {/* Home */}
-      <Link href="/" className={pathname === '/' ? 'text-[#1A96D5] py-12' : combinedBaseClass}>
+      <Link href="/" className={pathname === '/' ? 'text-[#1A96D5] py-12' : combinedBaseClass} onClick={handleLoader}>
         Home
       </Link>
 
@@ -223,6 +233,7 @@ function HeaderOptions() {
         >
           <Link
             href="/about-us/About-Webtech"
+            onClick={handleLoader}
             className={`block py-2 ${
               pathname === '/about-us/About-Webtech' ? 'text-[#1A96D5]' : 'hover:text-[#1A96D5]'
             }`}
@@ -231,6 +242,7 @@ function HeaderOptions() {
           </Link>
           <Link
             href="/about-us/our-team"
+            onClick={handleLoader}
             className={`block py-2 ${
               pathname === '/about-us/our-team' ? 'text-[#1A96D5]' : 'hover:text-[#1A96D5]'
             }`}
@@ -244,6 +256,7 @@ function HeaderOptions() {
       <Link
         href="/hire-dev"
         className={pathname.startsWith('/hire-dev') ? 'text-[#1A96D5] py-12' : combinedBaseClass}
+        onClick={handleLoader}
       >
         Hire Developers
       </Link>
@@ -277,6 +290,7 @@ function HeaderOptions() {
         >
           <Link
             href="/our-services/Webtech-services"
+            onClick={handleLoader}
             className={`block py-2 px-5 ${
               pathname.startsWith('/our-services/Webtech-services')
                 ? 'text-[#1A96D5]'
@@ -300,6 +314,7 @@ function HeaderOptions() {
               onMouseLeave={() => setOpenSubMenu(null)}
             >
               <Link
+              onClick={handleLoader}
                 href={path}
                 className={`block py-2 px-5 ${
                   checkIfAnyChildIsActive(groups[key])
@@ -337,6 +352,7 @@ function HeaderOptions() {
       ].map(({ label, path }) => (
         <Link
           key={path}
+          onClick={handleLoader}
           href={path}
           className={pathname.startsWith(path) ? 'text-[#1A96D5] py-12' : combinedBaseClass}
         >

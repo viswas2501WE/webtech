@@ -64,7 +64,7 @@ const AdminHeader = () => {
         <div className="flex justify-between items-center" style={{ height: '11vh', width: '75%' }}>
           {/* Logo */}
           <div style={{ width: '15.4%' }}>
-            <Link href="/admin/dashboard"> {/* Link to admin dashboard */}
+            <Link href="/admin@2096/dashboard"> {/* Link to admin dashboard */}
               <Image
                 width={200}
                 height={60}
@@ -90,7 +90,7 @@ const AdminHeader = () => {
           }`}
         >
           {/* logo */}
-          <Link href="/admin/dashboard" onClick={closeMobileMenu} className="flex items-center">
+          <Link href="/admin@2096/dashboard" onClick={closeMobileMenu} className="flex items-center">
             <Image
               src={logoUrl}
               alt="Admin Logo"
@@ -163,7 +163,7 @@ const AdminHeader = () => {
           style={{ scrollbarWidth: 'none' }}
         >
           <div className="flex justify-between items-center mb-4 p-4">
-            <Link href="/admin/dashboard" onClick={closeMobileMenu} className="w-fit">
+            <Link href="/admin@2096/dashboard" onClick={closeMobileMenu} className="w-fit">
               <Image
                 src={logoUrl}
                 alt="Admin Logo"

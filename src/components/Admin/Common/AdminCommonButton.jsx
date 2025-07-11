@@ -1,4 +1,4 @@
-'use client'; 
+// 'use client'; 
 
 const AdminCommonButton = ({ children, className = '', ...props }) => {
   return (
