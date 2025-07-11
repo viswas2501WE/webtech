@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { FaCheck } from 'react-icons/fa';
 
-import CommonButton from '@/components/common/CommonButton';
+import CommonButton from '@/components/Common/CommonButton';
 
 export default function Part4() {
   /* base WordPress folder from .env.local */

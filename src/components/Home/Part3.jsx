@@ -4,8 +4,8 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Link from 'next/link';
 
-import CommonButton from '@/components/common/CommonButton';
-import Screen3      from '@/components/common/Animations/Screen3';
+import CommonButton from '@/components/Common/CommonButton';
+import Screen3 from '@/components/Common/Animations/Screen3';
 
 export default function Part3() {
   const base = process.env.NEXT_PUBLIC_IMG_url;   // 2024/02 folder

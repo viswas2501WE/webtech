@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import CommonButton from '@/components/Common/CommonButton';
-import Screen2 from '@/components/common/Animations/Screen2';
+import Screen2 from '@/components/Common/Animations/Screen2';
 
 export default function Part2() {
   /* ---------- framer‑motion in‑view ---------- */
