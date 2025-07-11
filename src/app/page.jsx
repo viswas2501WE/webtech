@@ -13,7 +13,7 @@ import Part10 from "@/components/Home/Part10";
 import Part11 from "@/components/Home/Part11/Part11";
 import Part12 from "@/components/Home/Part12";
 import Part13 from "@/components/Home/Part13/Part13";
-import { Suspense } from "react";
+// import { Suspense } from "react";
 
 const Home = () => {
     return (

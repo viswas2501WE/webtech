@@ -87,7 +87,7 @@ export default function EVS2Inner() {
       <Part8 services={item.index.map((id) => services[id]).filter(Boolean)} title1slide="Distinct Solutions" title2slide="RELATED SERVICES" />
       {item.pricingPlans && item.pricingPlans.length > 0 && (
         <div className="">
-          <PricingPlans data={item.pricingPlans} plantitle1={item.plantitle1} />
+          {/* <PricingPlans data={item.pricingPlans} plantitle1={item.plantitle1} /> */}
         </div>
       )}
 

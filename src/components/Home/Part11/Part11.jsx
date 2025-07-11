@@ -1,42 +1,45 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { useLayoutEffect, useRef } from 'react';
 import Image from 'next/image';
+import { motion, useInView } from 'framer-motion';
 import Part11Client from './Part11Client';
 
 export default function Part11() {
   const containerRef = useRef(null);
   const imgRefs = useRef([]);
+  const floatXRefs = useRef([]);
+  const floatYRefs = useRef([]);
   const headerRef = useRef(null);
   const isInView = useInView(headerRef, { once: true, margin: '-100px' });
 
-  const IMG = process.env.NEXT_PUBLIC_IMG_url || '';
-
-  useEffect(() => {
+  useLayoutEffect(() => {
+    let ctx;
+    let animationId;
     let cancel = false;
 
     const loadGsap = async () => {
       const { gsap } = await import('gsap');
-      if (cancel) return;
+      if (cancel || !containerRef.current) return;
 
       const container = containerRef.current;
-      const images = imgRefs.current;
-      if (!container) return;
-
+      const [img0, img1, img2] = imgRefs.current;
       let rect = container.getBoundingClientRect();
       const mouse = { x: 0, y: 0, moved: false };
 
       const onMove = (e) => {
         rect = container.getBoundingClientRect();
-        mouse.moved = true;
         mouse.x = e.clientX - rect.left;
         mouse.y = e.clientY - rect.top;
+        mouse.moved = true;
       };
 
       const onLeave = () => {
-        images.slice(0, 2).forEach((img) => {
-          gsap.to(img, { duration: 1, x: 0, y: 0, ease: 'power3.out' });
+        gsap.to([img0, img1], {
+          duration: 1,
+          x: 0,
+          y: 0,
+          ease: 'power3.out',
         });
       };
 
@@ -44,23 +47,28 @@ export default function Part11() {
         rect = container.getBoundingClientRect();
       };
 
+      container.addEventListener('mousemove', onMove);
+      container.addEventListener('mouseleave', onLeave);
+      window.addEventListener('resize', onResize);
+
       const animate = () => {
         if (mouse.moved) {
-          images.slice(0, 2).forEach((img) => {
-            gsap.to(img, {
-              duration: 1,
-              y: ((mouse.y - rect.height / 2) / rect.width) * -40,
-              x: ((mouse.x - rect.width / 2) / rect.width) * -40,
-              ease: 'power3.out',
-            });
+          gsap.to([img0, img1], {
+            duration: 1,
+            x: ((mouse.x - rect.width / 2) / rect.width) * -40,
+            y: ((mouse.y - rect.height / 2) / rect.width) * -40,
+            ease: 'power3.out',
           });
           mouse.moved = false;
         }
         animationId = requestAnimationFrame(animate);
       };
 
-      if (images[2]) {
-        gsap.to(images[2], {
+      animate();
+
+      // Image 2 float (up-down)
+      if (img2) {
+        gsap.to(img2, {
           y: 100,
           duration: 6,
           repeat: -1,
@@ -69,25 +77,41 @@ export default function Part11() {
         });
       }
 
-      let animationId = requestAnimationFrame(animate);
-      container.addEventListener('mousemove', onMove);
-      container.addEventListener('mouseleave', onLeave);
-      window.addEventListener('resize', onResize);
+      // GSAP float replacements for movexa and moveya
+      if (floatXRefs.current.length > 0) {
+        gsap.to(floatXRefs.current, {
+          x: 70,
+          duration: 10,
+          repeat: -1,
+          yoyo: true,
+          ease: 'power1.inOut',
+        });
+      }
 
-      return () => {
-        cancelAnimationFrame(animationId);
-        container.removeEventListener('mousemove', onMove);
-        container.removeEventListener('mouseleave', onLeave);
-        window.removeEventListener('resize', onResize);
-      };
+      if (floatYRefs.current.length > 0) {
+        gsap.to(floatYRefs.current, {
+          y: 70,
+          duration: 10,
+          repeat: -1,
+          yoyo: true,
+          ease: 'power1.inOut',
+        });
+      }
     };
 
     loadGsap();
 
     return () => {
       cancel = true;
+      cancelAnimationFrame(animationId);
+      if (!containerRef.current) return;
+      containerRef.current.removeEventListener('mousemove', () => {});
+      containerRef.current.removeEventListener('mouseleave', () => {});
+      window.removeEventListener('resize', () => {});
     };
   }, []);
+
+  const IMG = process.env.NEXT_PUBLIC_IMG_url || '';
 
   return (
     <div
@@ -95,7 +119,6 @@ export default function Part11() {
       ref={containerRef}
       className="flex items-center py-20 overflow-hidden"
     >
-      {/* Left Side */}
       <div className="w-[50%] hidden lg:block">
         <div className="relative flex justify-center pl-22">
           <Image
@@ -117,7 +140,7 @@ export default function Part11() {
             src={`${IMG}/author-img_2.jpg`}
             alt=""
             className="absolute bottom-[4%] left-[67%] rounded-xl w-[17%]"
-            loading="lazy" 
+            loading="lazy"
           />
           <img
             ref={(el) => (imgRefs.current[2] = el)}
@@ -127,58 +150,45 @@ export default function Part11() {
             style={{ top: '-10%' }}
             loading="lazy"
           />
+
+          {/* FloatY */}
           <Image
+            ref={(el) => (floatYRefs.current[0] = el)}
             src={`${IMG}/element_25.png`}
             alt=""
             width={120}
             height={120}
-            className="absolute -bottom-[7%] left-[28%] w-[28%] -z-10 animate-[moveya_10s_ease-in-out_infinite] "
+            className="absolute -bottom-[7%] left-[28%] w-[28%] -z-10"
           />
+          {/* FloatX */}
           <Image
+            ref={(el) => (floatXRefs.current[0] = el)}
             src={`${IMG}/element_24.png`}
             alt=""
             width={120}
             height={120}
-            className="absolute -top-[6%] left-[65%] w-[22%] -z-10 animate-[movexa_10s_ease-in-out_infinite]"
+            className="absolute -top-[6%] left-[65%] w-[22%] -z-10"
           />
           <Image
+            ref={(el) => (floatXRefs.current[1] = el)}
             src={`${IMG}/element-02.png`}
             alt=""
             width={120}
             height={120}
-            className="absolute top-[50%] left-[32%] w-[12%] -z-10 animate-[movexa_10s_ease-in-out_infinite] "
+            className="absolute top-[50%] left-[32%] w-[12%] -z-10"
           />
+          {/* FloatY */}
           <Image
+            ref={(el) => (floatYRefs.current[1] = el)}
             src={`${IMG}/element_23.png`}
             alt=""
             width={120}
             height={120}
-            className="absolute -top-[20%] left-[15%] w-[30%] -z-10 animate-[moveya_10s_ease-in-out_infinite] hue-rotate-220"
+            className="absolute -top-[20%] left-[15%] w-[30%] -z-10 hue-rotate-220"
           />
-          <style jsx>{`
-            @keyframes movexa {
-              0%,
-              100% {
-                transform: translateX(0);
-              }
-              50% {
-                transform: translateX(7vh);
-              }
-            }
-            @keyframes moveya {
-              0%,
-              100% {
-                transform: translateY(0);
-              }
-              50% {
-                transform: translateY(7vh);
-              }
-            }
-          `}</style>
         </div>
       </div>
 
-      {/* Right Side */}
       <motion.div
         ref={headerRef}
         className="w-full lg:w-[50%] px-5 lg:px-0"
